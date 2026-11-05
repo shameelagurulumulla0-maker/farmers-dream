@@ -26,7 +26,7 @@ python3 scripts/package_preview.py
 
 ## Prototype boundaries
 
-This is a local browser prototype, not a production marketplace or packaged native application. Profiles, listings, images, bids and drafts are stored in the browser on one device. Sign-in is a demo profile selector, not secure authentication. No phone verification, shared database, message delivery, payment, winner selection or cross-device synchronization is connected. Clearing browser storage removes the saved data. Images are resized before saving, but browser storage remains limited. Use sample contact details when testing.
+This is a local prototype, not a production marketplace. An Apple Silicon macOS desktop wrapper is included; mobile and Windows packages are not yet built. Profiles, listings, images, bids and drafts are stored in the browser on one device. Sign-in is a demo profile selector, not secure authentication. No phone verification, shared database, message delivery, payment, winner selection or cross-device synchronization is connected. Clearing browser storage removes the saved data. Images are resized before saving, but browser storage remains limited. Use sample contact details when testing.
 
 The interface and sample content are translated; user-entered names and listings remain as entered. Native-speaker review of Sinhala/Tamil and visual browser validation remain pending. Behavior checks used a simulated DOM/canvas and do not establish full browser compatibility.
 
@@ -45,3 +45,7 @@ Cloudflare is the intended backend/web platform. No deployment, preview URL, cus
 Production work still requires authenticated API access, verified accounts, server-side ownership checks, shared persistence, image uploads, moderation, audit history and suitable native-app packaging/distribution decisions.
 
 License selection remains pending.
+
+## macOS desktop
+
+A native macOS wrapper is available in `desktop/macos/`. Run `bash desktop/macos/build.sh` to bundle the latest shared interface as Farmers Dream.app. See `desktop/macos/README.md` for build instructions and local data boundaries. The desktop app is a local WKWebView wrapper, not a live backend or App Store release.
