@@ -1,0 +1,1351 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#164d38"><title>Farmers Dream — Grow together</title><style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--green:#164d38;--ink:#20392d;--muted:#728074;--cream:#f7f8f2;--line:#dfe5da}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:15px 'DM Sans',sans-serif}button,input,select,textarea{font:inherit}button,a,select{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #ba8a28;outline-offset:3px}header{display:flex;align-items:center;justify-content:space-between;padding:24px 5%;background:#fff;border-bottom:1px solid var(--line);gap:20px}.brand{display:flex;align-items:center;gap:10px;color:var(--green);text-decoration:none;font-size:36px}.brand span{font:800 21px Manrope,sans-serif}.brand small{display:block;letter-spacing:2px;font:9px 'DM Sans';margin-top:4px}nav{display:flex;gap:25px}nav button{border:0;background:none;color:var(--muted);padding:10px 0}nav button.active{color:var(--green);font-weight:700;border-bottom:2px solid var(--green)}.primary,.light-button{border:0;border-radius:7px;padding:13px 20px;background:var(--green);color:white;font-weight:600;text-decoration:none;display:inline-block}main{max-width:1440px;margin:auto;padding:0 5%}.notice{font-size:11px;letter-spacing:1px;padding:17px 0;color:var(--muted)}.hero{background:var(--green);color:#fff;border-radius:16px;display:grid;grid-template-columns:1.2fr 1fr;overflow:hidden;min-height:360px}.hero>div:first-child{padding:45px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2px}.hero .eyebrow{color:#c4d5a4}h1{font:700 clamp(32px,4vw,54px)/1.15 Manrope,sans-serif;letter-spacing:-2px;margin:20px 0}h1 em{font-style:normal;color:#d3e6a7}.hero p:not(.eyebrow){color:#d0ded2;line-height:1.8}.light-button{background:#e8f0d9;color:var(--green);margin-top:15px}.landscape{position:relative;overflow:hidden;background:#b9cba4;min-height:300px}.sun{position:absolute;border-radius:50%;width:105px;height:105px;background:#f3db93;right:65px;top:40px}.hill{position:absolute;width:130%;height:230px;border-radius:50% 50% 0 0;bottom:-25px;transform:rotate(-17deg);background:#678a55;left:-140px}.hill.two{background:#42744d;left:100px;bottom:-80px;transform:rotate(19deg)}.field{position:absolute;width:160%;height:180px;bottom:-75px;left:-60px;background:repeating-linear-gradient(15deg,#224e38 0 12px,#72935b 13px 17px);transform:rotate(-16deg);border-radius:50%}.landscape span{position:absolute;top:25px;left:25px;font:800 12px/1.5 Manrope;letter-spacing:2px;color:#284e34}.intro,.market-head{display:flex;align-items:center;justify-content:space-between;gap:20px}.intro{margin:38px 0 20px}.intro p:last-child{color:var(--muted);font-size:13px}h2{font:700 24px Manrope;letter-spacing:-.7px;margin:7px 0}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:45px}.category{border:1px solid var(--line);border-radius:10px;background:#fff;text-align:left;padding:18px 16px;color:var(--ink)}.category b{display:block;margin-top:12px;font-size:13px}.category span{font-size:24px}.category.selected{border-color:var(--green);background:#eaf0df}.market-head{align-items:end}.search{display:flex;align-items:center;background:white;border:1px solid var(--line);border-radius:7px;padding:0 12px;gap:10px}.search input{border:0;background:none;width:270px;padding:13px 0;outline-offset:0}.filters{display:flex;align-items:center;gap:20px;font-size:12px;color:var(--muted);margin:24px 0}.filters select{border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);padding:8px}.filters #results{flex:1}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.art{height:170px;display:flex;align-items:center;justify-content:center;font-size:75px;position:relative;background:var(--art)}.art::after{content:'';position:absolute;width:140px;height:140px;border-radius:50%;border:1px solid #ffffff70;transform:translate(80px,35px)}.save{position:absolute;right:12px;top:12px;border:0;border-radius:50%;background:#fffffff0;color:var(--green);width:34px;height:34px;font-size:20px;z-index:1}.card-body{padding:19px}.badge{font-size:9px;letter-spacing:1px;font-weight:700;color:#4a7040;text-transform:uppercase;background:#edf2e5;padding:5px 7px;border-radius:4px}.location{float:right;color:var(--muted);font-size:11px}.card h3{font:700 18px Manrope;margin:16px 0 6px}.owner{font-size:12px;color:var(--muted);margin:0 0 20px}.card-bottom{border-top:1px solid #edf0e8;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px}.card-bottom strong{font-size:13px}.detail-button{border:0;background:none;color:var(--green);font-weight:700;padding:5px}.community{display:flex;gap:24px;align-items:center;margin:45px 0;background:#e9efdf;border-radius:12px;padding:30px}.community>span{font-size:50px}.community>div{flex:1}.community p{margin:8px 0;color:var(--muted)}footer{padding:25px 5%;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;font-size:12px;color:var(--muted)}dialog{border:0;border-radius:14px;max-width:560px;width:calc(100% - 30px);padding:32px;color:var(--ink);max-height:90vh}dialog::backdrop{background:#102b2270;backdrop-filter:blur(3px)}.close{float:right;border:0;background:#eef1e8;border-radius:50%;font-size:22px;width:30px;height:30px}form label{display:block;font-size:12px;font-weight:600;margin:16px 0}form input,form select,form textarea{display:block;width:100%;border:1px solid var(--line);border-radius:6px;padding:11px;margin-top:6px;background:white;color:var(--ink)}.form-row{display:flex;gap:15px}.form-row>label{flex:1}.muted{color:var(--muted);line-height:1.7}.empty{text-align:center;padding:50px}#toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--green);color:white;padding:14px 20px;border-radius:8px;display:none;z-index:5}.enquiry{background:white;border:1px solid var(--line);padding:22px;border-radius:10px;grid-column:1/-1}.enquiry p{white-space:pre-wrap}
+@media(max-width:900px){header{flex-wrap:wrap}.categories{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.hero>div:first-child{padding:30px}.market-head{align-items:start;flex-direction:column}.search{width:100%}.search input{width:100%}footer{flex-wrap:wrap}.community h2{font-size:20px}}@media(max-width:560px){header{padding:18px 5%;gap:15px}.brand span{font-size:18px}header>.primary{font-size:11px;padding:11px}nav{order:3;width:100%;justify-content:space-around}.hero{grid-template-columns:1fr}.landscape{min-height:150px}.sun{width:60px;height:60px;top:15px}.hero>div:first-child{padding:25px}h1{letter-spacing:-1px}.intro>p{display:none}.grid{grid-template-columns:1fr}.categories{gap:8px}.category{padding:12px}.category b{font-size:11px}.filters{gap:8px;flex-wrap:wrap}.filters #results{order:3;flex-basis:100%}.community{padding:22px;flex-wrap:wrap}.community>span{display:none}h2{font-size:22px}.notice{font-size:9px}footer span{width:100%}.form-row{display:block}}
+
+.account-button{border:1px solid var(--line);background:white;color:var(--green);border-radius:7px;padding:12px;max-width:180px;overflow:hidden;text-overflow:ellipsis}.check{display:flex;align-items:flex-start;gap:10px;line-height:1.6}.check input{width:18px;flex-shrink:0;margin-top:2px}.minimum{font-size:11px}hr{border:0;border-top:1px solid var(--line);margin:25px 0}@media(max-width:560px){.account-button{font-size:11px;padding:9px;max-width:140px}header{gap:10px}}
+.language-picker{display:flex;flex-direction:column;gap:4px;font-size:10px;color:var(--muted)}.language-picker select{border:1px solid var(--line);border-radius:6px;padding:8px;background:white;color:var(--ink);min-width:94px}html[lang=si] body,html[lang=ta] body{line-height:1.75}html[lang=si] h1,html[lang=ta] h1{font-size:clamp(28px,3.4vw,46px);line-height:1.5;letter-spacing:0}html[lang=si] h2,html[lang=ta] h2{line-height:1.65;letter-spacing:0}html[lang=si] .eyebrow,html[lang=ta] .eyebrow{letter-spacing:0}header{flex-wrap:wrap}nav{flex-wrap:wrap;gap:16px}.category{overflow-wrap:anywhere}.category b{line-height:1.7}.card-bottom{flex-wrap:wrap}.hero p{overflow-wrap:anywhere}@media(max-width:560px){.language-picker{margin-left:auto}.language-picker select{padding:6px}.brand{flex:1 0 55%}nav{order:5}header>.primary{flex:1}.account-button{max-width:55%}}
+
+.categories{grid-template-columns:repeat(4,minmax(0,1fr))}.market-section{grid-column:1/-1;min-width:0;margin-bottom:12px}.section-heading{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);margin-bottom:18px;padding:8px 0}.section-heading h3{font:700 23px Manrope,sans-serif;margin:0}.section-listings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}@media(max-width:1000px){.categories{grid-template-columns:repeat(4,minmax(0,1fr))}.section-listings{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.section-listings{grid-template-columns:1fr}}
+
+.perspective{display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid var(--line);border-left:5px solid var(--green);border-radius:10px;padding:25px;background:#edf2e6;margin:0 0 30px}.perspective select{border:1px solid var(--line);padding:12px;border-radius:7px;background:white;max-width:100%}.perspective .muted{margin-bottom:0}@media(max-width:650px){.perspective{align-items:start;flex-direction:column}}
+
+.bidding{border-top:2px solid var(--line);border-bottom:2px solid var(--line);padding:24px 0;margin:25px 0}.bid-lane{padding:15px;background:#f3f5ed;border-radius:8px;margin:14px 0}.bid-row{padding:15px;background:white;border:1px solid var(--line);border-radius:6px;margin:12px 0;overflow-wrap:anywhere}.bid-row>span,.bid-row>b{display:block;margin-top:6px}.bid-row>span,.bid-row time{font-size:11px;color:var(--muted)}.bid-row p{white-space:pre-wrap;font-size:13px}.bid-row>b{color:var(--green)}
+
+.catalog-group{grid-column:1/-1;min-width:0}.catalog-group>h3{font-size:16px;color:var(--green);margin:16px 0}.catalog-group .section-listings{margin-bottom:20px}fieldset{border:1px solid var(--line);border-radius:8px;padding:14px;margin:18px 0}fieldset legend{font-size:12px;font-weight:700;padding:0 7px}
+
+.listing-cover{width:100%;height:100%;object-fit:cover}.listing-gallery{display:flex;gap:10px;overflow-x:auto;margin:20px 0;scroll-snap-type:x mandatory}.listing-gallery img{width:85%;max-height:320px;object-fit:contain;flex-shrink:0;background:#eef1e8;border-radius:8px;scroll-snap-align:start}.image-previews{display:flex;gap:10px;flex-wrap:wrap}.image-previews>div{width:110px}.image-previews img{width:110px;height:90px;object-fit:cover;border-radius:7px}.image-previews button{font-size:11px;border:0;background:#edf1e4;padding:7px;width:100%;border-radius:5px}.listing-facts>div{border-bottom:1px solid var(--line);padding:12px 0}.listing-facts dt{font-size:12px;color:var(--muted)}.listing-facts dd{margin:5px 0;overflow-wrap:anywhere}.listing-facts a{color:var(--green)}
+.section-page .hero,.section-page .intro,.section-page .categories,.section-page .perspective,.section-page .community{display:none}.directory-toolbar{display:flex;gap:20px;margin:25px 0}.directory-toolbar label{flex:1;font-size:12px;color:var(--muted)}.directory-toolbar input,.directory-toolbar select{display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:7px;margin-top:7px;background:#fff}.member-card{overflow-wrap:anywhere}.member-card strong{font-size:12px}.member-card p{font-size:13px;line-height:1.7}#directory-page h1{font-size:36px;letter-spacing:-1px;margin:20px 0}#member-count{font-size:12px;color:var(--muted);margin-bottom:15px}#directory-page>h2{margin:40px 0 15px}#member-grid:empty{display:none}@media(max-width:560px){.directory-toolbar{flex-direction:column;gap:10px}}
+</style></head>
+<body><header><a class="brand" href="#">✳ <span>Farmers Dream<small>ROOTED IN SRI LANKA</small></span></a><nav aria-label="Main"><button data-view="all" class="active">Marketplace</button><button data-view="saved">Saved <span id="saved-count">0</span></button><button data-view="enquiries">Enquiries</button></nav><label class="language-picker"><span>Language</span><select id="language" aria-label="Select language"><option value="en">English</option><option value="si">සිංහල</option><option value="ta">தமிழ்</option></select></label><button id="account" class="account-button">Register / Sign in</button><button class="primary" id="post">＋ Create listing</button></header>
+<main><div class="notice">EARLY PREVIEW · Sample listings · Saved items and drafts stay in this browser</div><section class="hero"><div><p class="eyebrow">YOUR LAND. YOUR WORK. YOUR CONNECTIONS.</p><h1>A wholesale marketplace.<br>Built around <em>you.</em></h1><p>From your next harvest to the people who help it grow.<br>Trade in bulk. Connect directly with Sri Lanka’s farming businesses.</p><a href="#market" class="light-button">Explore the marketplace ↗</a></div><div class="landscape" aria-hidden="true"><div class="sun"></div><div class="hill one"></div><div class="hill two"></div><div class="field"></div><span>GROW LOCAL.<br>GO FURTHER.</span></div></section>
+<section class="intro"><div><p class="eyebrow">EVERY CONNECTION STARTS HERE</p><h2>What do you need today?</h2></div><p>One community. More possibilities.</p></section><div class="categories" id="categories" aria-label="Marketplace categories"></div>
+<section id="directory-page" hidden><a href="#/" class="detail-button">← Back to marketplace</a><p class="eyebrow">COMMUNITY DIRECTORY</p><h1 id="directory-title"></h1><p class="muted">Registered profiles on this device. Live shared directories are not connected yet.</p><button id="edit-profile" class="primary">Edit my business profile</button><div class="directory-toolbar"><label>Search members<input id="member-search" type="search"></label><label>District<select id="member-district"><option value="">All districts</option></select></label></div><div id="member-count" role="status"></div><div id="member-grid" class="grid"></div><p id="member-empty" class="muted" hidden>No registered members match this section yet.</p><h2>Related listings</h2></section><section class="perspective" aria-label="Your dashboard"><div><p id="role-label" class="eyebrow"></p><h2 id="perspective-title"></h2><p id="perspective-description" class="muted"></p></div><select id="feed-scope" aria-label="Opportunity view"><option value="recommended">For my role</option><option value="all">All marketplace listings</option><option value="mine">My listings</option><option id="catalog-scope" value="catalog" hidden>My products & offers</option></select></section><section id="market"><div class="market-head"><div><p class="eyebrow">WHOLESALE ONLY · NO RETAIL SALES</p><h2 id="view-title">Discover your next opportunity</h2></div><label class="search">⌕ <input id="search" type="search" placeholder="Search produce, services, people…" aria-label="Search listings"></label></div><div class="filters"><label>District <select id="district"><option value="">All districts</option></select></label><span id="results" role="status"></span><label>Sort <select id="sort"><option value="new">Newest first</option><option value="title">Name A–Z</option></select></label></div><div id="grid" class="grid"></div><div id="empty" hidden class="empty"><h3>No matches yet</h3><p>Try a different search or category.</p></div></section><section class="community"><span>✳</span><div><h2>Better connections. Stronger farmers.</h2><p>A place for every part of your farming business.</p></div><button id="community-post" class="primary">Share an opportunity ↗</button></section></main><footer><strong>Farmers Dream</strong><span>Made for the people who grow Sri Lanka.</span><span>Local prototype · No live transactions</span></footer>
+<dialog id="detail"><button class="close" aria-label="Close details">×</button><div id="detail-content"></div></dialog>
+<dialog id="listing-dialog"><button class="close" aria-label="Close listing form">×</button><p class="eyebrow">SHARE WITH THE COMMUNITY</p><h2>Create a listing</h2><p class="muted">Registered members only. Wholesale trade and agricultural business services. Saved on this device only.</p><form id="listing-form"><label>Listing type<select name="intent" id="form-intent" required><option value="offer">Offering</option><option value="request">Needed</option></select></label><label>Product / listing name<input name="title" required maxlength="100" placeholder="e.g. 2 tonnes of tomatoes available"></label><div class="form-row"><label>Category<select name="category" id="form-category"></select></label><label>District<select name="district" id="form-district"></select></label></div><p id="listing-owner" class="muted"></p><label id="minimum-label">Minimum wholesale order / service scope<input name="minimum" required maxlength="100" placeholder="e.g. Minimum 500 kg, 50 bags, or full-load transport"></label><fieldset id="fertilizer-fields" hidden><legend>Fertilizer product / offer details</legend><label>Catalog type<select id="catalog-type" name="catalogType"><option value="product">Fertilizer product</option><option value="offer">Fertilizer offer</option></select></label><label>Pack size<input id="pack-size" name="packSize" maxlength="100" disabled></label></fieldset><label>Wholesale price / business terms<input name="price" required maxlength="80" placeholder="e.g. LKR 250 / kg or Contact for bulk quote"></label><label>Quality / grade / condition<input name="quality" required maxlength="160"></label><div class="form-row"><label>Quantity available<input name="quantity" type="number" min="0.01" step="0.01" required></label><label>Unit<input name="unit" required maxlength="40" placeholder="kg, tonnes, bags, units, loads"></label></div><label>Contact phone number<input name="phone" id="listing-phone" type="tel" required pattern="(?:0[0-9]{9}|\+94[0-9]{9})" placeholder="0771234567 or +94771234567"></label><label>Town / village / pickup location<input name="location" required maxlength="160"></label><p class="muted">Your contact number and location will be visible with this listing. Use sample details in this local preview.</p><label>Product images (up to 5)<input id="listing-images" type="file" accept="image/jpeg,image/png,image/webp" multiple></label><p class="muted">JPEG, PNG or WebP. Maximum 5 MB per image. Images are resized and stored on this device only.</p><div id="image-previews" class="image-previews"></div><label>Description<textarea name="description" required maxlength="1500" rows="4"></textarea></label><button class="primary" type="submit">Save local listing</button></form></dialog><dialog id="account-dialog"><button class="close" aria-label="Close registration">×</button><p class="eyebrow">JOIN THE WHOLESALE COMMUNITY</p><h2>Register with Farmers Dream</h2><p class="muted">Your name and district will appear in the directory for your registered role. Create a profile before creating listings. This is a local registration preview: profiles are not verified and sign-in has no secure authentication yet. Use sample contact details.</p><form id="register-form"><label>Full name / business name<input name="name" required maxlength="80" autocomplete="name"></label><label>Mobile number<input name="phone" type="tel" required pattern="(?:0[0-9]{9}|\+94[0-9]{9})" placeholder="0771234567 or +94771234567" autocomplete="tel"></label><label>Main role<select name="role" required><option value="Farmer">Farmer</option><option value="Wholesale buyer">Wholesale buyer</option><option value="Transport provider">Transport provider</option><option value="Fertilizer supplier">Fertilizer supplier</option><option value="Land seller">Land seller</option><option value="Exporter">Exporter</option><option value="Equipment seller">Equipment seller</option></select></label><label>District<select id="register-district" name="district" required></select></label><label class="check"><input name="wholesale" type="checkbox" required> I will use this platform for wholesale trade and agricultural business services, not retail sales.</label><button class="primary">Register local profile</button></form><hr><h3>Already registered on this device?</h3><form id="signin-form"><label>Local demo profile<select id="signin-profile" required></select></label><button class="primary">Sign in to local preview</button></form><p id="account-status" class="muted"></p><button id="signout" class="detail-button" hidden>Sign out</button></dialog><dialog id="profile-dialog"><button class="close" aria-label="Close details">×</button><h2>Edit my business profile</h2><p class="muted">Your name, district and business details appear in your section directory. Publish your phone only if you want it displayed. Use sample details in this preview.</p><form id="profile-form"><label>Full name / business name<input name="name" required maxlength="80"></label><label>District<select name="district" id="profile-district"></select></label><label>Town / village / pickup location<input name="location" maxlength="160"></label><label>Description<textarea name="bio" maxlength="1000" rows="3"></textarea></label><label class="check"><input name="showPhone" type="checkbox">Display my contact number in the directory</label><fieldset id="vehicle-fields" hidden><legend>Transport business details</legend><label>Vehicle type and capacity<input name="vehicle" maxlength="160"></label><label>Service areas / routes<input name="routes" maxlength="160"></label><label>Rates and pricing basis<input name="rate" maxlength="160" placeholder="e.g. LKR per km, per trip or per tonne"></label><label>Availability<select name="availability"><option value="Not specified">Not specified</option><option value="Available">Available</option><option value="By arrangement">By arrangement</option><option value="Unavailable">Unavailable</option></select></label><label>Vehicle images (up to 5)<input id="vehicle-images" type="file" accept="image/jpeg,image/png,image/webp" multiple></label><div id="vehicle-previews" class="image-previews"></div></fieldset><button class="primary">Save business profile</button></form></dialog><dialog id="member-dialog"><button class="close" aria-label="Close details">×</button><div id="member-detail"></div></dialog><div id="toast" role="status"></div><script>
+window.FD_MESSAGES={
+  "Marketplace": {
+    "si": "වෙළඳපොළ",
+    "ta": "சந்தை"
+  },
+  "Saved": {
+    "si": "සුරැකි",
+    "ta": "சேமித்தவை"
+  },
+  "Enquiries": {
+    "si": "විමසීම්",
+    "ta": "விசாரணைகள்"
+  },
+  "Register / Sign in": {
+    "si": "ලියාපදිංචි වන්න / පිවිසෙන්න",
+    "ta": "பதிவு / உள்நுழைவு"
+  },
+  "＋ Create listing": {
+    "si": "＋ දැන්වීමක් සාදන්න",
+    "ta": "＋ விளம்பரம் உருவாக்கு"
+  },
+  "ROOTED IN SRI LANKA": {
+    "si": "ශ්‍රී ලංකාවෙන් ඇරඹෙන",
+    "ta": "இலங்கையை வேராகக் கொண்டது"
+  },
+  "EARLY PREVIEW · Sample listings · Saved items and drafts stay in this browser": {
+    "si": "මුල් පෙරදසුන · ආදර්ශ දැන්වීම් · සුරැකි දෑ සහ කෙටුම්පත් මෙම බ්‍රවුසරයේ පමණි",
+    "ta": "ஆரம்ப முன்னோட்டம் · மாதிரி விளம்பரங்கள் · சேமிப்புகளும் வரைவுகளும் இந்த உலாவியில் மட்டுமே"
+  },
+  "YOUR LAND. YOUR WORK. YOUR CONNECTIONS.": {
+    "si": "ඔබේ ඉඩම. ඔබේ වැඩ. ඔබේ සබඳතා.",
+    "ta": "உங்கள் நிலம். உங்கள் உழைப்பு. உங்கள் தொடர்புகள்."
+  },
+  "A wholesale marketplace.": {
+    "si": "තොග වෙළඳපොළක්.",
+    "ta": "ஒரு மொத்த விற்பனைச் சந்தை."
+  },
+  "Built around": {
+    "si": "ගොඩනැඟෙන්නේ",
+    "ta": "மையமாக இருப்பவர்"
+  },
+  "you.": {
+    "si": "ඔබයි.",
+    "ta": "நீங்கள்."
+  },
+  "From your next harvest to the people who help it grow.": {
+    "si": "ඔබේ ඊළඟ අස්වැන්නෙන් එය සරු කරන පිරිස දක්වා.",
+    "ta": "உங்கள் அடுத்த அறுவடை முதல் அதை வளர்க்க உதவும் நபர்கள் வரை."
+  },
+  "Trade in bulk. Connect directly with Sri Lanka’s farming businesses.": {
+    "si": "තොග වශයෙන් වෙළඳාම් කරන්න. ශ්‍රී ලංකාවේ කෘෂි ව්‍යාපාර සමඟ සෘජුව සම්බන්ධ වන්න.",
+    "ta": "மொத்தமாக வர்த்தகம் செய்யுங்கள். இலங்கையின் விவசாய வணிகங்களுடன் நேரடியாக இணையுங்கள்."
+  },
+  "Explore the marketplace ↗": {
+    "si": "වෙළඳපොළ බලන්න ↗",
+    "ta": "சந்தையைப் பார்வையிடு ↗"
+  },
+  "GROW LOCAL.": {
+    "si": "දේශීයව වගා කරන්න.",
+    "ta": "உள்ளூரில் வளருங்கள்."
+  },
+  "GO FURTHER.": {
+    "si": "තවත් ඉදිරියට යන්න.",
+    "ta": "மேலும் முன்னேறுங்கள்."
+  },
+  "EVERY CONNECTION STARTS HERE": {
+    "si": "සෑම සබඳතාවක්ම මෙතැනින් ඇරඹේ",
+    "ta": "ஒவ்வொரு தொடர்பும் இங்கே தொடங்குகிறது"
+  },
+  "What do you need today?": {
+    "si": "අද ඔබට අවශ්‍ය කුමක්ද?",
+    "ta": "இன்று உங்களுக்கு என்ன தேவை?"
+  },
+  "One community. More possibilities.": {
+    "si": "එක ප්‍රජාවක්. වැඩි අවස්ථා.",
+    "ta": "ஒரே சமூகம். அதிக வாய்ப்புகள்."
+  },
+  "WHOLESALE ONLY · NO RETAIL SALES": {
+    "si": "තොග වෙළඳාම පමණි · සිල්ලර වෙළඳාම නැත",
+    "ta": "மொத்த விற்பனை மட்டும் · சில்லறை விற்பனை இல்லை"
+  },
+  "Discover your next opportunity": {
+    "si": "ඔබේ ඊළඟ අවස්ථාව සොයාගන්න",
+    "ta": "உங்கள் அடுத்த வாய்ப்பைக் கண்டறியுங்கள்"
+  },
+  "Search produce, services, people…": {
+    "si": "අස්වැන්න, සේවා, පුද්ගලයන් සොයන්න…",
+    "ta": "விளைபொருட்கள், சேவைகள், நபர்களைத் தேடுங்கள்…"
+  },
+  "District": {
+    "si": "දිස්ත්‍රික්කය",
+    "ta": "மாவட்டம்"
+  },
+  "All districts": {
+    "si": "සියලු දිස්ත්‍රික්ක",
+    "ta": "அனைத்து மாவட்டங்களும்"
+  },
+  "Sort": {
+    "si": "අනුපිළිවෙළ",
+    "ta": "வரிசைப்படுத்து"
+  },
+  "Newest first": {
+    "si": "අලුත්ම දෑ පළමුව",
+    "ta": "புதியவை முதலில்"
+  },
+  "Name A–Z": {
+    "si": "නම අනුව A–Z",
+    "ta": "பெயர் A–Z"
+  },
+  "No matches yet": {
+    "si": "ගැළපෙන ප්‍රතිඵල නැත",
+    "ta": "பொருத்தமான முடிவுகள் இல்லை"
+  },
+  "Try a different search or category.": {
+    "si": "වෙනත් සෙවුමක් හෝ ප්‍රවර්ගයක් උත්සාහ කරන්න.",
+    "ta": "வேறு தேடல் அல்லது வகையை முயற்சிக்கவும்."
+  },
+  "Better connections. Stronger farmers.": {
+    "si": "වඩා හොඳ සබඳතා. ශක්තිමත් ගොවීන්.",
+    "ta": "சிறந்த தொடர்புகள். வலுவான விவசாயிகள்."
+  },
+  "A place for every part of your farming business.": {
+    "si": "ඔබේ කෘෂි ව්‍යාපාරයේ සෑම අවශ්‍යතාවකටම තැනක්.",
+    "ta": "உங்கள் விவசாய வணிகத்தின் ஒவ்வொரு தேவைக்கும் ஓர் இடம்."
+  },
+  "Share an opportunity ↗": {
+    "si": "අවස්ථාවක් බෙදාගන්න ↗",
+    "ta": "ஒரு வாய்ப்பைப் பகிருங்கள் ↗"
+  },
+  "Made for the people who grow Sri Lanka.": {
+    "si": "ශ්‍රී ලංකාව සරු කරන ජනතාව වෙනුවෙන්.",
+    "ta": "இலங்கையை வளர்க்கும் மக்களுக்காக."
+  },
+  "Local prototype · No live transactions": {
+    "si": "දේශීය ආදර්ශය · සැබෑ ගනුදෙනු නැත",
+    "ta": "உள்ளக முன்மாதிரி · நேரடி பரிவர்த்தனைகள் இல்லை"
+  },
+  "SHARE WITH THE COMMUNITY": {
+    "si": "ප්‍රජාව සමඟ බෙදාගන්න",
+    "ta": "சமூகத்துடன் பகிருங்கள்"
+  },
+  "Create a listing": {
+    "si": "දැන්වීමක් සාදන්න",
+    "ta": "விளம்பரம் உருவாக்கு"
+  },
+  "Registered members only. Wholesale trade and agricultural business services. Saved on this device only.": {
+    "si": "ලියාපදිංචි සාමාජිකයන්ට පමණි. තොග වෙළඳාම සහ කෘෂි ව්‍යාපාර සේවා. මෙම උපාංගයේ පමණක් සුරැකේ.",
+    "ta": "பதிவுசெய்த உறுப்பினர்களுக்கு மட்டும். மொத்த வர்த்தகம் மற்றும் விவசாய வணிகச் சேவைகள். இந்தச் சாதனத்தில் மட்டுமே சேமிக்கப்படும்."
+  },
+  "Listing title": {
+    "si": "දැන්වීමේ මාතෘකාව",
+    "ta": "விளம்பரத் தலைப்பு"
+  },
+  "Category": {
+    "si": "ප්‍රවර්ගය",
+    "ta": "வகை"
+  },
+  "Minimum wholesale order / service scope": {
+    "si": "අවම තොග ඇණවුම / සේවා පරාසය",
+    "ta": "குறைந்தபட்ச மொத்த ஆர்டர் / சேவை வரம்பு"
+  },
+  "Wholesale price / business terms": {
+    "si": "තොග මිල / ව්‍යාපාර කොන්දේසි",
+    "ta": "மொத்த விலை / வணிக விதிமுறைகள்"
+  },
+  "Description": {
+    "si": "විස්තරය",
+    "ta": "விவரம்"
+  },
+  "Save local listing": {
+    "si": "දැන්වීම මෙම උපාංගයේ සුරකින්න",
+    "ta": "விளம்பரத்தைச் சாதனத்தில் சேமி"
+  },
+  "JOIN THE WHOLESALE COMMUNITY": {
+    "si": "තොග වෙළඳ ප්‍රජාවට එක්වන්න",
+    "ta": "மொத்த வர்த்தக சமூகத்தில் இணையுங்கள்"
+  },
+  "Register with Farmers Dream": {
+    "si": "Farmers Dream හි ලියාපදිංචි වන්න",
+    "ta": "Farmers Dream இல் பதிவுசெய்யுங்கள்"
+  },
+  "Create a profile before creating listings. This is a local registration preview: profiles are not verified and sign-in has no secure authentication yet. Use sample contact details.": {
+    "si": "දැන්වීම් සෑදීමට පෙර පැතිකඩක් සාදන්න. මෙය දේශීය ලියාපදිංචි පෙරදසුනකි: පැතිකඩ සත්‍යාපනය කර නැති අතර ආරක්ෂිත පිවිසුම තවම නැත. ආදර්ශ සම්බන්ධතා විස්තර භාවිත කරන්න.",
+    "ta": "விளம்பரங்களை உருவாக்கும் முன் சுயவிவரம் உருவாக்குங்கள். இது உள்ளகப் பதிவு முன்னோட்டம்: சுயவிவரங்கள் சரிபார்க்கப்படவில்லை; பாதுகாப்பான உள்நுழைவு இன்னும் இல்லை. மாதிரித் தொடர்பு விவரங்களைப் பயன்படுத்துங்கள்."
+  },
+  "Full name / business name": {
+    "si": "සම්පූර්ණ නම / ව්‍යාපාර නම",
+    "ta": "முழுப் பெயர் / வணிகப் பெயர்"
+  },
+  "Mobile number": {
+    "si": "ජංගම දුරකථන අංකය",
+    "ta": "கைபேசி எண்"
+  },
+  "Main role": {
+    "si": "ප්‍රධාන භූමිකාව",
+    "ta": "முதன்மைப் பங்கு"
+  },
+  "Farmer": {
+    "si": "ගොවියා",
+    "ta": "விவசாயி"
+  },
+  "Wholesale buyer": {
+    "si": "තොග ගැනුම්කරු",
+    "ta": "மொத்தக் கொள்வனவாளர்"
+  },
+  "Transport provider": {
+    "si": "ප්‍රවාහන සේවා සපයන්නා",
+    "ta": "போக்குவரத்து வழங்குநர்"
+  },
+  "Fertilizer supplier": {
+    "si": "පොහොර සැපයුම්කරු",
+    "ta": "உர வழங்குநர்"
+  },
+  "Land seller": {
+    "si": "ඉඩම් විකුණුම්කරු",
+    "ta": "நில விற்பனையாளர்"
+  },
+  "Exporter": {
+    "si": "අපනයනකරු",
+    "ta": "ஏற்றுமதியாளர்"
+  },
+  "I will use this platform for wholesale trade and agricultural business services, not retail sales.": {
+    "si": "මම මෙම වේදිකාව සිල්ලර වෙළඳාම සඳහා නොව තොග වෙළඳාම සහ කෘෂි ව්‍යාපාර සේවා සඳහා භාවිත කරමි.",
+    "ta": "இந்தத் தளத்தைச் சில்லறை விற்பனைக்குப் பயன்படுத்தாமல் மொத்த வர்த்தகம் மற்றும் விவசாய வணிகச் சேவைகளுக்குப் பயன்படுத்துவேன்."
+  },
+  "Register local profile": {
+    "si": "දේශීය පැතිකඩ ලියාපදිංචි කරන්න",
+    "ta": "உள்ளகச் சுயவிவரத்தைப் பதிவுசெய்"
+  },
+  "Already registered on this device?": {
+    "si": "මෙම උපාංගයේ දැනටමත් ලියාපදිංචි වී තිබේද?",
+    "ta": "இந்தச் சாதனத்தில் ஏற்கனவே பதிவுசெய்துள்ளீர்களா?"
+  },
+  "Local demo profile": {
+    "si": "දේශීය ආදර්ශ පැතිකඩ",
+    "ta": "உள்ளக மாதிரிச் சுயவிவரம்"
+  },
+  "Sign in to local preview": {
+    "si": "දේශීය පෙරදසුනට පිවිසෙන්න",
+    "ta": "உள்ளக முன்னோட்டத்தில் உள்நுழை"
+  },
+  "Sign out": {
+    "si": "ඉවත් වන්න",
+    "ta": "வெளியேறு"
+  },
+  "You are not signed in.": {
+    "si": "ඔබ පිවිස නැත.",
+    "ta": "நீங்கள் உள்நுழையவில்லை."
+  },
+  "All opportunities": {
+    "si": "සියලු අවස්ථා",
+    "ta": "அனைத்து வாய்ப்புகளும்"
+  },
+  "Produce & buyers": {
+    "si": "අස්වැන්න සහ ගැනුම්කරුවන්",
+    "ta": "விளைபொருட்கள் மற்றும் வாங்குபவர்கள்"
+  },
+  "Transport": {
+    "si": "ප්‍රවාහනය",
+    "ta": "போக்குவரத்து"
+  },
+  "Fertilizer & supplies": {
+    "si": "පොහොර සහ සැපයුම්",
+    "ta": "உரம் மற்றும் இடுபொருட்கள்"
+  },
+  "Agricultural land": {
+    "si": "කෘෂිකාර්මික ඉඩම්",
+    "ta": "விவசாய நிலம்"
+  },
+  "Export connections": {
+    "si": "අපනයන සබඳතා",
+    "ta": "ஏற்றுமதித் தொடர்புகள்"
+  },
+  "Your saved opportunities": {
+    "si": "ඔබ සුරැකි අවස්ථා",
+    "ta": "நீங்கள் சேமித்த வாய்ப்புகள்"
+  },
+  "Your enquiry drafts": {
+    "si": "ඔබේ විමසීම් කෙටුම්පත්",
+    "ta": "உங்கள் விசாரணை வரைவுகள்"
+  },
+  "Local draft · Not sent": {
+    "si": "දේශීය කෙටුම්පත · යවා නැත",
+    "ta": "உள்ளக வரைவு · அனுப்பப்படவில்லை"
+  },
+  "Delete draft": {
+    "si": "කෙටුම්පත මකන්න",
+    "ta": "வரைவை நீக்கு"
+  },
+  "Wholesale / business enquiry": {
+    "si": "තොග / ව්‍යාපාර විමසීම",
+    "ta": "மொத்த / வணிக விசாரணை"
+  },
+  "View ↗": {
+    "si": "බලන්න ↗",
+    "ta": "பார்க்க ↗"
+  },
+  "Wholesale terms:": {
+    "si": "තොග කොන්දේසි:",
+    "ta": "மொத்த விதிமுறைகள்:"
+  },
+  "Bulk supply or agricultural business enquiry — confirm terms with provider.": {
+    "si": "තොග සැපයුම හෝ කෘෂි ව්‍යාපාර විමසීම — සපයන්නාගෙන් කොන්දේසි තහවුරු කරගන්න.",
+    "ta": "மொத்த விநியோகம் அல்லது விவசாய வணிக விசாரணை — வழங்குநரிடம் விதிமுறைகளை உறுதிப்படுத்துங்கள்."
+  },
+  "Your enquiry": {
+    "si": "ඔබේ විමසීම",
+    "ta": "உங்கள் விசாரணை"
+  },
+  "Save a local draft. Messaging and verified accounts are not connected yet.": {
+    "si": "දේශීය කෙටුම්පතක් සුරකින්න. පණිවිඩ සහ සත්‍යාපිත ගිණුම් තවම සම්බන්ධ කර නැත.",
+    "ta": "உள்ளக வரைவைச் சேமியுங்கள். செய்திகளும் சரிபார்க்கப்பட்ட கணக்குகளும் இன்னும் இணைக்கப்படவில்லை."
+  },
+  "Save enquiry draft": {
+    "si": "විමසීම් කෙටුම්පත සුරකින්න",
+    "ta": "விசாரணை வரைவைச் சேமி"
+  },
+  "Choose your registered demo profile": {
+    "si": "ඔබේ ලියාපදිංචි ආදර්ශ පැතිකඩ තෝරන්න",
+    "ta": "பதிவுசெய்த மாதிரிச் சுயவிவரத்தைத் தேர்ந்தெடுக்கவும்"
+  },
+  "Signed out of the local preview.": {
+    "si": "දේශීය පෙරදසුනෙන් ඉවත් විය.",
+    "ta": "உள்ளக முன்னோட்டத்திலிருந்து வெளியேறிவிட்டீர்கள்."
+  },
+  "Complete your profile and accept wholesale-only trading.": {
+    "si": "ඔබේ පැතිකඩ සම්පූර්ණ කර තොග වෙළඳාම පමණක් පිළිගන්න.",
+    "ta": "சுயவிவரத்தை நிரப்பி மொத்த வர்த்தகத்திற்கு மட்டும் ஒப்புக்கொள்ளுங்கள்."
+  },
+  "This number is already registered locally. Choose your profile below.": {
+    "si": "මෙම අංකය දැනටමත් දේශීයව ලියාපදිංචි කර ඇත. පහතින් පැතිකඩ තෝරන්න.",
+    "ta": "இந்த எண் ஏற்கனவே உள்ளகமாகப் பதிவுசெய்யப்பட்டுள்ளது. கீழே உங்கள் சுயவிவரத்தைத் தேர்ந்தெடுக்கவும்."
+  },
+  "Registration could not be saved. Please enable browser storage.": {
+    "si": "ලියාපදිංචිය සුරැකීමට නොහැකි විය. බ්‍රවුසර ගබඩාව සක්‍රිය කරන්න.",
+    "ta": "பதிவைச் சேமிக்க முடியவில்லை. உலாவிச் சேமிப்பை இயக்கவும்."
+  },
+  "Local profile registered. You can now create wholesale listings.": {
+    "si": "දේශීය පැතිකඩ ලියාපදිංචි විය. දැන් තොග දැන්වීම් සෑදිය හැක.",
+    "ta": "உள்ளகச் சுயவிவரம் பதிவுசெய்யப்பட்டது. இப்போது மொத்த விளம்பரங்களை உருவாக்கலாம்."
+  },
+  "Choose a registered local profile.": {
+    "si": "ලියාපදිංචි දේශීය පැතිකඩක් තෝරන්න.",
+    "ta": "பதிவுசெய்த உள்ளகச் சுயவிவரத்தைத் தேர்ந்தெடுக்கவும்."
+  },
+  "Please complete each field.": {
+    "si": "සෑම ක්ෂේත්‍රයක්ම සම්පූර්ණ කරන්න.",
+    "ta": "ஒவ்வொரு புலத்தையும் நிரப்பவும்."
+  },
+  "Listing saved locally. It is not publicly published.": {
+    "si": "දැන්වීම දේශීයව සුරැකිණි. ප්‍රසිද්ධ කර නැත.",
+    "ta": "விளம்பரம் உள்ளகமாகச் சேமிக்கப்பட்டது. பொதுவில் வெளியிடப்படவில்லை."
+  },
+  "Enquiry draft saved on this device. Not sent.": {
+    "si": "විමසීම් කෙටුම්පත මෙම උපාංගයේ සුරැකිණි. යවා නැත.",
+    "ta": "விசாரணை வரைவு இந்தச் சாதனத்தில் சேமிக்கப்பட்டது. அனுப்பப்படவில்லை."
+  },
+  "Browser storage unavailable. Changes last for this session only.": {
+    "si": "බ්‍රවුසර ගබඩාව නොමැත. වෙනස්කම් මෙම සැසියට පමණි.",
+    "ta": "உலாவிச் சேமிப்பு கிடைக்கவில்லை. மாற்றங்கள் இந்த அமர்வில் மட்டுமே இருக்கும்."
+  },
+  "Search listings": {
+    "si": "දැන්වීම් සොයන්න",
+    "ta": "விளம்பரங்களைத் தேடு"
+  },
+  "Marketplace categories": {
+    "si": "වෙළඳපොළ ප්‍රවර්ග",
+    "ta": "சந்தை வகைகள்"
+  },
+  "Main": {
+    "si": "ප්‍රධාන",
+    "ta": "முதன்மை"
+  },
+  "Close details": {
+    "si": "විස්තර වසන්න",
+    "ta": "விவரங்களை மூடு"
+  },
+  "Close listing form": {
+    "si": "දැන්වීම් පෝරමය වසන්න",
+    "ta": "விளம்பரப் படிவத்தை மூடு"
+  },
+  "Close registration": {
+    "si": "ලියාපදිංචිය වසන්න",
+    "ta": "பதிவை மூடு"
+  },
+  "Language": {
+    "si": "භාෂාව",
+    "ta": "மொழி"
+  },
+  "Select language": {
+    "si": "භාෂාව තෝරන්න",
+    "ta": "மொழியைத் தேர்ந்தெடுக்கவும்"
+  },
+  "Fresh harvest, straight from the farm": {
+    "si": "ගොවිපළෙන් සෘජුව නැවුම් අස්වැන්න",
+    "ta": "பண்ணையிலிருந்து நேரடியாகப் புதிய அறுவடை"
+  },
+  "Make the journey to market easier": {
+    "si": "වෙළඳපොළට යන ගමන පහසු කරන්න",
+    "ta": "சந்தைக்குச் செல்லும் பயணத்தை எளிதாக்குங்கள்"
+  },
+  "Organic compost for your next season": {
+    "si": "ඔබේ ඊළඟ කන්නයට කාබනික කොම්පෝස්ට්",
+    "ta": "உங்கள் அடுத்த பருவத்திற்கு இயற்கை மக்கிய உரம்"
+  },
+  "Room for your next growing chapter": {
+    "si": "ඔබේ ඊළඟ වගාව සඳහා ඉඩක්",
+    "ta": "உங்கள் அடுத்த சாகுபடிக்கான இடம்"
+  },
+  "Connecting local harvests to new markets": {
+    "si": "දේශීය අස්වැන්න නව වෙළඳපොළවලට සම්බන්ධ කිරීම",
+    "ta": "உள்ளூர் அறுவடைகளைப் புதிய சந்தைகளுடன் இணைத்தல்"
+  },
+  "A buyer for your next rice harvest": {
+    "si": "ඔබේ ඊළඟ වී අස්වැන්නට ගැනුම්කරුවෙක්",
+    "ta": "உங்கள் அடுத்த நெல் அறுவடைக்கு ஒரு வாங்குபவர்"
+  },
+  "Sample farmer · Produce seller": {
+    "si": "ආදර්ශ ගොවියා · අස්වැන්න විකුණුම්කරු",
+    "ta": "மாதிரி விவசாயி · விளைபொருள் விற்பனையாளர்"
+  },
+  "Sample transport provider": {
+    "si": "ආදර්ශ ප්‍රවාහන සපයන්නා",
+    "ta": "மாதிரி போக்குவரத்து வழங்குநர்"
+  },
+  "Sample fertilizer supplier": {
+    "si": "ආදර්ශ පොහොර සැපයුම්කරු",
+    "ta": "மாதிரி உர வழங்குநர்"
+  },
+  "Sample land seller": {
+    "si": "ආදර්ශ ඉඩම් විකුණුම්කරු",
+    "ta": "மாதிரி நில விற்பனையாளர்"
+  },
+  "Sample exporter": {
+    "si": "ආදර්ශ අපනයනකරු",
+    "ta": "மாதிரி ஏற்றுமதியாளர்"
+  },
+  "Sample produce buyer": {
+    "si": "ආදර්ශ අස්වැන්න ගැනුම්කරු",
+    "ta": "மாதிரி விளைபொருள் வாங்குபவர்"
+  },
+  "LKR 280 / kg · sample price": {
+    "si": "රු. 280 / කි.ග්‍රෑ. · ආදර්ශ මිල",
+    "ta": "ரூ. 280 / கிலோ · மாதிரி விலை"
+  },
+  "LKR 1,200 / bag · sample price": {
+    "si": "රු. 1,200 / බෑගය · ආදර්ශ මිල",
+    "ta": "ரூ. 1,200 / பை · மாதிரி விலை"
+  },
+  "Request a quote": {
+    "si": "මිල ගණන් ඉල්ලන්න",
+    "ta": "விலைப்புள்ளி கோருங்கள்"
+  },
+  "Contact for terms": {
+    "si": "කොන්දේසි සඳහා අමතන්න",
+    "ta": "விதிமுறைகளுக்குத் தொடர்புகொள்ளுங்கள்"
+  },
+  "Discuss supply requirements": {
+    "si": "සැපයුම් අවශ්‍යතා සාකච්ඡා කරන්න",
+    "ta": "விநியோகத் தேவைகளைப் பேசுங்கள்"
+  },
+  "Enquire for buying terms": {
+    "si": "මිලදී ගැනීමේ කොන්දේසි විමසන්න",
+    "ta": "கொள்வனவு விதிமுறைகளை விசாரியுங்கள்"
+  },
+  "Sample wholesale listing: 2,000 kg of fresh carrots available, minimum order 500 kg. Discuss harvest dates, quantity and collection directly with the farmer.": {
+    "si": "ආදර්ශ තොග දැන්වීම: නැවුම් කැරට් කි.ග්‍රෑ. 2,000ක් ඇත. අවම ඇණවුම කි.ග්‍රෑ. 500කි. අස්වනු දින, ප්‍රමාණය සහ රැගෙන යාම ගොවියා සමඟ සෘජුව සාකච්ඡා කරන්න.",
+    "ta": "மாதிரி மொத்த விளம்பரம்: 2,000 கிலோ புதிய கரட் கிடைக்கும். குறைந்தபட்ச ஆர்டர் 500 கிலோ. அறுவடைத் தேதி, அளவு மற்றும் சேகரிப்பை விவசாயியுடன் நேரடியாகப் பேசுங்கள்."
+  },
+  "Sample transport service for farm produce. Enquire about route, vehicle capacity, collection date and handling requirements.": {
+    "si": "ගොවි අස්වැන්න සඳහා ආදර්ශ ප්‍රවාහන සේවාවකි. මාර්ගය, වාහන ධාරිතාව, රැගෙන යන දිනය සහ හැසිරවීමේ අවශ්‍යතා විමසන්න.",
+    "ta": "விளைபொருட்களுக்கான மாதிரி போக்குவரத்துச் சேவை. பாதை, வாகனக் கொள்ளளவு, சேகரிப்புத் தேதி மற்றும் கையாளும் தேவைகளை விசாரியுங்கள்."
+  },
+  "Sample wholesale supplier listing: minimum order 50 bags of 25 kg compost. Confirm product details, availability and delivery arrangements with the supplier.": {
+    "si": "ආදර්ශ තොග සැපයුම් දැන්වීම: කි.ග්‍රෑ. 25 කොම්පෝස්ට් බෑග් 50ක අවම ඇණවුමකි. නිෂ්පාදන විස්තර, තොග සහ බෙදාහැරීම සැපයුම්කරුගෙන් තහවුරු කරන්න.",
+    "ta": "மாதிரி மொத்த விநியோக விளம்பரம்: 25 கிலோ மக்கிய உரம் குறைந்தபட்சம் 50 பைகள். பொருள் விவரங்கள், இருப்பு மற்றும் விநியோகத்தை வழங்குநரிடம் உறுதிசெய்யுங்கள்."
+  },
+  "Sample agricultural land listing. Enquire about acreage, water access, ownership documents and viewing arrangements.": {
+    "si": "ආදර්ශ කෘෂිකාර්මික ඉඩම් දැන්වීමකි. අක්කර ගණන, ජල පහසුකම්, හිමිකම් ලේඛන සහ නැරඹීම පිළිබඳ විමසන්න.",
+    "ta": "மாதிரி விவசாய நில விளம்பரம். பரப்பளவு, நீர் வசதி, உரிமை ஆவணங்கள் மற்றும் பார்வையிடுவதைப் பற்றி விசாரியுங்கள்."
+  },
+  "Sample exporter seeking conversations with growers. Discuss crop type, quality specifications, volumes and delivery schedules.": {
+    "si": "වගාකරුවන් සමඟ සම්බන්ධ වීමට කැමති ආදර්ශ අපනයනකරුවෙකි. බෝගය, ගුණාත්මක ප්‍රමිතීන්, ප්‍රමාණ සහ බෙදාහැරීමේ දින සාකච්ඡා කරන්න.",
+    "ta": "விவசாயிகளுடன் தொடர்புகொள்ள விரும்பும் மாதிரி ஏற்றுமதியாளர். பயிர் வகை, தரத் தேவைகள், அளவுகள் மற்றும் விநியோக அட்டவணையைப் பேசுங்கள்."
+  },
+  "Sample buyer enquiry for paddy. Share variety, expected quantity and harvest date to start a conversation.": {
+    "si": "වී සඳහා ආදර්ශ ගැනුම් විමසීමකි. සාකච්ඡාව ඇරඹීමට ප්‍රභේදය, අපේක්ෂිත ප්‍රමාණය සහ අස්වනු දිනය බෙදාගන්න.",
+    "ta": "நெல்லுக்கான மாதிரி வாங்குபவர் விசாரணை. உரையாடலைத் தொடங்க ரகம், எதிர்பார்க்கும் அளவு மற்றும் அறுவடைத் தேதியைப் பகிருங்கள்."
+  },
+  "e.g. 2 tonnes of tomatoes available": {
+    "si": "උදා. තක්කාලි ටොන් 2ක් ඇත",
+    "ta": "எ.கா. 2 தொன் தக்காளி கிடைக்கும்"
+  },
+  "e.g. Minimum 500 kg, 50 bags, or full-load transport": {
+    "si": "උදා. අවම කි.ග්‍රෑ. 500, බෑග් 50 හෝ සම්පූර්ණ රථ ප්‍රවාහනය",
+    "ta": "எ.கா. குறைந்தபட்சம் 500 கிலோ, 50 பைகள் அல்லது முழுச் சுமைப் போக்குவரத்து"
+  },
+  "e.g. LKR 250 / kg or Contact for bulk quote": {
+    "si": "උදා. රු. 250 / කි.ග්‍රෑ. හෝ තොග මිල විමසන්න",
+    "ta": "எ.கா. ரூ. 250 / கிலோ அல்லது மொத்த விலைக்கு அணுகவும்"
+  },
+  "0771234567 or +94771234567": {
+    "si": "0771234567 හෝ +94771234567",
+    "ta": "0771234567 அல்லது +94771234567"
+  },
+  "Introduce yourself and ask about availability, quantity or terms.": {
+    "si": "ඔබ හඳුන්වා දී තොග, ප්‍රමාණ හෝ කොන්දේසි විමසන්න.",
+    "ta": "உங்களை அறிமுகப்படுத்தி இருப்பு, அளவு அல்லது விதிமுறைகளை விசாரியுங்கள்."
+  },
+  "Ampara": {
+    "si": "අම්පාර",
+    "ta": "அம்பாறை"
+  },
+  "Anuradhapura": {
+    "si": "අනුරාධපුරය",
+    "ta": "அனுராதபுரம்"
+  },
+  "Badulla": {
+    "si": "බදුල්ල",
+    "ta": "பதுளை"
+  },
+  "Batticaloa": {
+    "si": "මඩකලපුව",
+    "ta": "மட்டக்களப்பு"
+  },
+  "Colombo": {
+    "si": "කොළඹ",
+    "ta": "கொழும்பு"
+  },
+  "Galle": {
+    "si": "ගාල්ල",
+    "ta": "காலி"
+  },
+  "Gampaha": {
+    "si": "ගම්පහ",
+    "ta": "கம்பஹா"
+  },
+  "Hambantota": {
+    "si": "හම්බන්තොට",
+    "ta": "அம்பாந்தோட்டை"
+  },
+  "Jaffna": {
+    "si": "යාපනය",
+    "ta": "யாழ்ப்பாணம்"
+  },
+  "Kalutara": {
+    "si": "කළුතර",
+    "ta": "களுத்துறை"
+  },
+  "Kandy": {
+    "si": "මහනුවර",
+    "ta": "கண்டி"
+  },
+  "Kegalle": {
+    "si": "කෑගල්ල",
+    "ta": "கேகாலை"
+  },
+  "Kilinochchi": {
+    "si": "කිලිනොච්චිය",
+    "ta": "கிளிநொச்சி"
+  },
+  "Kurunegala": {
+    "si": "කුරුණෑගල",
+    "ta": "குருநாகல்"
+  },
+  "Mannar": {
+    "si": "මන්නාරම",
+    "ta": "மன்னார்"
+  },
+  "Matale": {
+    "si": "මාතලේ",
+    "ta": "மாத்தளை"
+  },
+  "Matara": {
+    "si": "මාතර",
+    "ta": "மாத்தறை"
+  },
+  "Monaragala": {
+    "si": "මොනරාගල",
+    "ta": "மொனராகலை"
+  },
+  "Mullaitivu": {
+    "si": "මුලතිව්",
+    "ta": "முல்லைத்தீவு"
+  },
+  "Nuwara Eliya": {
+    "si": "නුවරඑළිය",
+    "ta": "நுவரெலியா"
+  },
+  "Polonnaruwa": {
+    "si": "පොළොන්නරුව",
+    "ta": "பொலன்னறுவை"
+  },
+  "Puttalam": {
+    "si": "පුත්තලම",
+    "ta": "புத்தளம்"
+  },
+  "Ratnapura": {
+    "si": "රත්නපුරය",
+    "ta": "இரத்தினபுரி"
+  },
+  "Trincomalee": {
+    "si": "ත්‍රිකුණාමලය",
+    "ta": "திருகோணமலை"
+  },
+  "Vavuniya": {
+    "si": "වවුනියාව",
+    "ta": "வவுனியா"
+  },
+  "Dambulla": {
+    "si": "දඹුල්ල",
+    "ta": "தம்புள்ளை"
+  },
+  "Farm produce": {
+    "si": "ගොවි අස්වැන්න",
+    "ta": "விவசாய விளைபொருட்கள்"
+  },
+  "Buyers": {
+    "si": "ගැනුම්කරුවන්",
+    "ta": "வாங்குபவர்கள்"
+  },
+  "Fertilizer": {
+    "si": "පොහොර",
+    "ta": "உரம்"
+  },
+  "Browse section ↗": {
+    "si": "අංශය බලන්න ↗",
+    "ta": "பிரிவைப் பாருங்கள் ↗"
+  },
+  "Your dashboard": {
+    "si": "ඔබේ මුල් පිටුව",
+    "ta": "உங்கள் முகப்பு"
+  },
+  "Opportunity view": {
+    "si": "අවස්ථා දසුන",
+    "ta": "வாய்ப்புக் காட்சி"
+  },
+  "For my role": {
+    "si": "මගේ භූමිකාවට",
+    "ta": "எனது பங்கிற்காக"
+  },
+  "All marketplace listings": {
+    "si": "සියලු වෙළඳපොළ දැන්වීම්",
+    "ta": "அனைத்து சந்தை விளம்பரங்களும்"
+  },
+  "My listings": {
+    "si": "මගේ දැන්වීම්",
+    "ta": "எனது விளம்பரங்கள்"
+  },
+  "Guest": {
+    "si": "අමුත්තා",
+    "ta": "விருந்தினர்"
+  },
+  "Your farming business": {
+    "si": "ඔබේ කෘෂි ව්‍යාපාරය",
+    "ta": "உங்கள் விவசாய வணிகம்"
+  },
+  "Find wholesale buyers, transport, fertilizer, land and export connections.": {
+    "si": "තොග ගැනුම්කරුවන්, ප්‍රවාහනය, පොහොර, උපකරණ, ඉඩම් සහ අපනයන සබඳතා සොයන්න.",
+    "ta": "மொத்த வாங்குபவர்கள், போக்குவரத்து, உரம், உபகரணங்கள், நிலம் மற்றும் ஏற்றுமதித் தொடர்புகளைக் கண்டறியுங்கள்."
+  },
+  "Find wholesale farm produce": {
+    "si": "තොග ගොවි අස්වැන්න සොයන්න",
+    "ta": "மொத்த விவசாய விளைபொருட்களைக் கண்டறியுங்கள்"
+  },
+  "Discover farmers offering harvests for bulk purchase.": {
+    "si": "තොග මිලදී ගැනීම් සඳහා අස්වැන්න සපයන ගොවීන් සොයන්න.",
+    "ta": "மொத்தக் கொள்வனவிற்காக அறுவடைகளை வழங்கும் விவசாயிகளைக் கண்டறியுங்கள்."
+  },
+  "Transport jobs from farmers": {
+    "si": "ගොවීන්ගේ ප්‍රවාහන අවශ්‍යතා",
+    "ta": "விவசாயிகளின் போக்குவரத்து வேலைகள்"
+  },
+  "See farmers requesting transport for their harvests and supplies.": {
+    "si": "ගොවීන්ගේ ප්‍රවාහන ඉල්ලීම් සහ ප්‍රවාහන ලංසු තැබිය හැකි අස්වැන්න බලන්න.",
+    "ta": "விவசாயிகளின் போக்குவரத்துக் கோரிக்கைகளையும் போக்குவரத்து ஏலமிடக்கூடிய விளைபொருட்களையும் பாருங்கள்."
+  },
+  "Supply requests from farmers": {
+    "si": "ගොවීන්ගේ සැපයුම් ඉල්ලීම්",
+    "ta": "விவசாயிகளின் இடுபொருள் கோரிக்கைகள்"
+  },
+  "See farmers looking for fertilizer and farming supplies.": {
+    "si": "පොහොර සහ කෘෂි සැපයුම් සොයන ගොවීන් බලන්න.",
+    "ta": "உரம் மற்றும் விவசாய இடுபொருட்களைத் தேடும் விவசாயிகளைப் பாருங்கள்."
+  },
+  "Land requests from farmers": {
+    "si": "ගොවීන්ගේ ඉඩම් ඉල්ලීම්",
+    "ta": "விவசாயிகளின் நிலக் கோரிக்கைகள்"
+  },
+  "See farmers looking for agricultural land.": {
+    "si": "කෘෂිකාර්මික ඉඩම් සොයන ගොවීන් බලන්න.",
+    "ta": "விவசாய நிலங்களைத் தேடும் விவசாயிகளைப் பாருங்கள்."
+  },
+  "Source produce from farmers": {
+    "si": "ගොවීන්ගෙන් අස්වැන්න ලබාගන්න",
+    "ta": "விவசாயிகளிடமிருந்து விளைபொருட்களைப் பெறுங்கள்"
+  },
+  "Connect with farmers offering produce for wholesale export supply.": {
+    "si": "තොග අපනයනයට අස්වැන්න සපයන ගොවීන් සමඟ සම්බන්ධ වන්න.",
+    "ta": "மொத்த ஏற்றுமதிக்காக விளைபொருட்களை வழங்கும் விவசாயிகளுடன் இணையுங்கள்."
+  },
+  "A marketplace built around farmers": {
+    "si": "ගොවීන් කේන්ද්‍ර කරගත් වෙළඳපොළක්",
+    "ta": "விவசாயிகளை மையமாகக் கொண்ட சந்தை"
+  },
+  "Register to see opportunities matched to your role.": {
+    "si": "ඔබේ භූමිකාවට ගැළපෙන අවස්ථා බැලීමට ලියාපදිංචි වන්න.",
+    "ta": "உங்கள் பங்கிற்கேற்ற வாய்ப்புகளைக் காணப் பதிவுசெய்யுங்கள்."
+  },
+  "Listing type": {
+    "si": "දැන්වීම් වර්ගය",
+    "ta": "விளம்பர வகை"
+  },
+  "Offering": {
+    "si": "සපයයි",
+    "ta": "வழங்கப்படுகிறது"
+  },
+  "Needed": {
+    "si": "අවශ්‍යයි",
+    "ta": "தேவை"
+  },
+  "Transport needed for a 2-tonne harvest": {
+    "si": "ටොන් 2ක අස්වැන්නට ප්‍රවාහනය අවශ්‍යයි",
+    "ta": "2 தொன் அறுவடைக்குப் போக்குவரத்து தேவை"
+  },
+  "Sample farmer · Transport request": {
+    "si": "ආදර්ශ ගොවියා · ප්‍රවාහන ඉල්ලීම",
+    "ta": "மாதிரி விவசாயி · போக்குவரத்துக் கோரிக்கை"
+  },
+  "Request for transport quotes": {
+    "si": "ප්‍රවාහන මිල ගණන් ඉල්ලීම",
+    "ta": "போக்குவரத்து விலைப்புள்ளிக் கோரிக்கை"
+  },
+  "Full load: 2 tonnes": {
+    "si": "සම්පූර්ණ බර: ටොන් 2",
+    "ta": "முழுச் சுமை: 2 தொன்"
+  },
+  "Sample farmer request: transport a 2-tonne harvest from Kurunegala to Colombo. Confirm pickup date and vehicle suitability through an enquiry.": {
+    "si": "ආදර්ශ ගොවි ඉල්ලීම: කුරුණෑගල සිට කොළඹට ටොන් 2ක අස්වැන්න ප්‍රවාහනය කරන්න. දිනය සහ වාහන සුදුසුකම විමසීමකින් තහවුරු කරන්න.",
+    "ta": "மாதிரி விவசாயிக் கோரிக்கை: குருநாகலிலிருந்து கொழும்புக்கு 2 தொன் அறுவடையைக் கொண்டு செல்லுங்கள். சேகரிப்புத் தேதி மற்றும் வாகனப் பொருத்தத்தை விசாரணை மூலம் உறுதிசெய்யுங்கள்."
+  },
+  "Farmer needs 50 bags of compost": {
+    "si": "ගොවියාට කොම්පෝස්ට් බෑග් 50ක් අවශ්‍යයි",
+    "ta": "விவசாயிக்கு 50 பைகள் மக்கிய உரம் தேவை"
+  },
+  "Sample farmer · Fertilizer request": {
+    "si": "ආදර්ශ ගොවියා · පොහොර ඉල්ලීම",
+    "ta": "மாதிரி விவசாயி · உரக் கோரிக்கை"
+  },
+  "Request for wholesale quotes": {
+    "si": "තොග මිල ගණන් ඉල්ලීම",
+    "ta": "மொத்த விலைப்புள்ளிக் கோரிக்கை"
+  },
+  "50 bags of 25 kg": {
+    "si": "කි.ග්‍රෑ. 25 බෑග් 50ක්",
+    "ta": "25 கிலோ கொண்ட 50 பைகள்"
+  },
+  "Sample farmer request for bulk compost. Suppliers can discuss product specifications, availability and delivery.": {
+    "si": "තොග කොම්පෝස්ට් සඳහා ආදර්ශ ගොවි ඉල්ලීමකි. සැපයුම්කරුවන්ට නිෂ්පාදන ප්‍රමිතීන්, තොග සහ බෙදාහැරීම සාකච්ඡා කළ හැක.",
+    "ta": "மொத்த மக்கிய உரத்திற்கான மாதிரி விவசாயிக் கோரிக்கை. வழங்குநர்கள் பொருள் விவரங்கள், இருப்பு மற்றும் விநியோகத்தைப் பேசலாம்."
+  },
+  "Farmer looking for agricultural land": {
+    "si": "කෘෂිකාර්මික ඉඩමක් සොයන ගොවියෙක්",
+    "ta": "விவசாய நிலம் தேடும் விவசாயி"
+  },
+  "Sample farmer · Land request": {
+    "si": "ආදර්ශ ගොවියා · ඉඩම් ඉල්ලීම",
+    "ta": "மாதிரி விவசாயி · நிலக் கோரிக்கை"
+  },
+  "Discuss land requirements": {
+    "si": "ඉඩම් අවශ්‍යතා සාකච්ඡා කරන්න",
+    "ta": "நிலத் தேவைகளைப் பேசுங்கள்"
+  },
+  "Agricultural business enquiry": {
+    "si": "කෘෂි ව්‍යාපාර විමසීම",
+    "ta": "விவசாய வணிக விசாரணை"
+  },
+  "Sample farmer seeking agricultural land with water access. Discuss acreage, ownership documents and viewing arrangements.": {
+    "si": "ජල පහසුකම් සහිත කෘෂිකාර්මික ඉඩමක් සොයන ආදර්ශ ගොවියෙකි. අක්කර ගණන, හිමිකම් ලේඛන සහ නැරඹීම සාකච්ඡා කරන්න.",
+    "ta": "நீர் வசதியுள்ள விவசாய நிலம் தேடும் மாதிரி விவசாயி. பரப்பளவு, உரிமை ஆவணங்கள் மற்றும் பார்வையிடுவதைப் பேசுங்கள்."
+  },
+  "OPEN BIDDING": {
+    "si": "විවෘත ලංසු තැබීම",
+    "ta": "திறந்த ஏலம்"
+  },
+  "Buyer bids & transport quotes": {
+    "si": "ගැනුම් ලංසු සහ ප්‍රවාහන මිල ගණන්",
+    "ta": "வாங்குபவர் ஏலங்களும் போக்குவரத்து விலைப்புள்ளிகளும்"
+  },
+  "All bids on this device are visible here. This demo does not share bids between users or devices. Latest bid per bidder is shown. No winner or payment is automatic.": {
+    "si": "මෙම උපාංගයේ සියලු ලංසු මෙහි පෙනේ. මෙම ආදර්ශය පරිශීලකයන් හෝ උපාංග අතර ලංසු බෙදා නොගනී. එක් ලංසුකරුවෙකුගේ නවතම ලංසුව පෙන්වයි. ජයග්‍රාහකයෙකු හෝ ගෙවීමක් ස්වයංක්‍රීය නොවේ.",
+    "ta": "இந்தச் சாதனத்தின் அனைத்து ஏலங்களும் இங்கே தெரியும். இந்த மாதிரி பயனர்கள் அல்லது சாதனங்களிடையே ஏலங்களைப் பகிராது. ஒவ்வொருவரின் சமீபத்திய ஏலம் காட்டப்படும். வெற்றியாளர் அல்லது கட்டணம் தானாக நிர்ணயிக்கப்படாது."
+  },
+  "Buyer bids": {
+    "si": "ගැනුම් ලංසු",
+    "ta": "வாங்குபவர் ஏலங்கள்"
+  },
+  "Transport bids": {
+    "si": "ප්‍රවාහන ලංසු",
+    "ta": "போக்குவரத்து ஏலங்கள்"
+  },
+  "Offers to purchase produce. Total price for the stated quantity.": {
+    "si": "අස්වැන්න මිලදී ගැනීමේ ලංසු. සඳහන් ප්‍රමාණය සඳහා මුළු මිල.",
+    "ta": "விளைபொருள் கொள்வனவு ஏலங்கள். குறிப்பிட்ட அளவிற்கான மொத்த விலை."
+  },
+  "Quotes to transport produce. Total transport cost for the stated load.": {
+    "si": "අස්වැන්න ප්‍රවාහනයේ මිල ගණන්. සඳහන් බර සඳහා මුළු ප්‍රවාහන ගාස්තුව.",
+    "ta": "விளைபொருள் போக்குவரத்து விலைப்புள்ளிகள். குறிப்பிட்ட சுமைக்கான மொத்தப் போக்குவரத்துக் கட்டணம்."
+  },
+  "No bids yet. Be the first to bid.": {
+    "si": "තවම ලංසු නැත. පළමු ලංසුව තබන්න.",
+    "ta": "இன்னும் ஏலங்கள் இல்லை. முதலில் ஏலமிடுங்கள்."
+  },
+  "Place a buyer bid": {
+    "si": "ගැනුම් ලංසුවක් තබන්න",
+    "ta": "கொள்வனவு ஏலமிடு"
+  },
+  "Place a transport bid": {
+    "si": "ප්‍රවාහන ලංසුවක් තබන්න",
+    "ta": "போக்குவரத்து ஏலமிடு"
+  },
+  "Your name, role, amount and terms will be visible on this local bid board.": {
+    "si": "ඔබේ නම, භූමිකාව, මුදල සහ කොන්දේසි මෙම දේශීය ලංසු පුවරුවේ පෙනෙනු ඇත.",
+    "ta": "உங்கள் பெயர், பங்கு, தொகை மற்றும் விதிமுறைகள் இந்த உள்ளக ஏலப் பலகையில் தெரியும்."
+  },
+  "Total amount (LKR)": {
+    "si": "මුළු මුදල (රු.)",
+    "ta": "மொத்தத் தொகை (ரூ.)"
+  },
+  "Quantity to purchase": {
+    "si": "මිලදී ගන්නා ප්‍රමාණය",
+    "ta": "கொள்வனவு அளவு"
+  },
+  "Load and route covered": {
+    "si": "අදාළ බර සහ මාර්ගය",
+    "ta": "உள்ளடங்கும் சுமையும் பாதையும்"
+  },
+  "Bid terms": {
+    "si": "ලංසු කොන්දේසි",
+    "ta": "ஏல விதிமுறைகள்"
+  },
+  "Submit / update open bid": {
+    "si": "විවෘත ලංසුව ඉදිරිපත් / යාවත්කාලීන කරන්න",
+    "ta": "திறந்த ஏலத்தைச் சமர்ப்பி / புதுப்பி"
+  },
+  "You own this listing. Review buyer bids and transport quotes here.": {
+    "si": "මෙය ඔබේ දැන්වීමයි. ගැනුම් ලංසු සහ ප්‍රවාහන මිල ගණන් මෙහි බලන්න.",
+    "ta": "இது உங்கள் விளம்பரம். வாங்குபவர் ஏலங்களையும் போக்குவரத்து விலைப்புள்ளிகளையும் இங்கே பாருங்கள்."
+  },
+  "Sign in as a wholesale buyer, exporter or transport provider to bid.": {
+    "si": "ලංසු තැබීමට තොග ගැනුම්කරුවෙකු, අපනයනකරුවෙකු හෝ ප්‍රවාහන සපයන්නෙකු ලෙස පිවිසෙන්න.",
+    "ta": "ஏலமிட மொத்த வாங்குபவர், ஏற்றுமதியாளர் அல்லது போக்குவரத்து வழங்குநராக உள்நுழையுங்கள்."
+  },
+  "Sign in with an eligible buyer or transport profile to bid.": {
+    "si": "ලංසු තැබීමට සුදුසු ගැනුම් හෝ ප්‍රවාහන පැතිකඩකින් පිවිසෙන්න.",
+    "ta": "ஏலமிடத் தகுதியான வாங்குபவர் அல்லது போக்குவரத்துச் சுயவிவரத்தில் உள்நுழையுங்கள்."
+  },
+  "Enter a valid amount, quantity or load, and bid terms.": {
+    "si": "වලංගු මුදලක්, ප්‍රමාණයක් හෝ බරක් සහ ලංසු කොන්දේසි ඇතුළත් කරන්න.",
+    "ta": "செல்லுபடியான தொகை, அளவு அல்லது சுமை மற்றும் ஏல விதிமுறைகளை உள்ளிடுங்கள்."
+  },
+  "Open bid saved locally. Not sent to other devices.": {
+    "si": "විවෘත ලංසුව දේශීයව සුරැකිණි. වෙනත් උපාංග වෙත යවා නැත.",
+    "ta": "திறந்த ஏலம் உள்ளகமாகச் சேமிக்கப்பட்டது. பிற சாதனங்களுக்கு அனுப்பப்படவில்லை."
+  },
+  "My products & offers": {
+    "si": "මගේ නිෂ්පාදන සහ දීමනා",
+    "ta": "எனது தயாரிப்புகளும் சலுகைகளும்"
+  },
+  "Your fertilizer business": {
+    "si": "ඔබේ පොහොර ව්‍යාපාරය",
+    "ta": "உங்கள் உர வணிகம்"
+  },
+  "Manage your products and offers, and respond to farmers needing fertilizer.": {
+    "si": "ඔබේ නිෂ්පාදන සහ දීමනා කළමනාකරණය කර පොහොර අවශ්‍ය ගොවීන්ට ප්‍රතිචාර දක්වන්න.",
+    "ta": "உங்கள் தயாரிப்புகளையும் சலுகைகளையும் நிர்வகித்து உரம் தேவைப்படும் விவசாயிகளுக்குப் பதிலளியுங்கள்."
+  },
+  "Fertilizer products": {
+    "si": "පොහොර නිෂ්පාදන",
+    "ta": "உரத் தயாரிப்புகள்"
+  },
+  "Fertilizer offers": {
+    "si": "පොහොර දීමනා",
+    "ta": "உரச் சலுகைகள்"
+  },
+  "Farmer fertilizer requests": {
+    "si": "ගොවීන්ගේ පොහොර ඉල්ලීම්",
+    "ta": "விவசாயிகளின் உரக் கோரிக்கைகள்"
+  },
+  "Fertilizer product": {
+    "si": "පොහොර නිෂ්පාදනය",
+    "ta": "உரத் தயாரிப்பு"
+  },
+  "Fertilizer offer": {
+    "si": "පොහොර දීමනාව",
+    "ta": "உரச் சலுகை"
+  },
+  "Fertilizer product / offer details": {
+    "si": "පොහොර නිෂ්පාදන / දීමනා විස්තර",
+    "ta": "உரத் தயாரிப்பு / சலுகை விவரங்கள்"
+  },
+  "Catalog type": {
+    "si": "නාමාවලි වර්ගය",
+    "ta": "பட்டியல் வகை"
+  },
+  "Pack size": {
+    "si": "ඇසුරුම් ප්‍රමාණය",
+    "ta": "பொதி அளவு"
+  },
+  "Available quantity": {
+    "si": "පවතින ප්‍රමාණය",
+    "ta": "கிடைக்கும் அளவு"
+  },
+  "Enter pack size and available quantity.": {
+    "si": "ඇසුරුම් ප්‍රමාණය සහ පවතින ප්‍රමාණය ඇතුළත් කරන්න.",
+    "ta": "பொதி அளவையும் கிடைக்கும் அளவையும் உள்ளிடுங்கள்."
+  },
+  "Bulk compost offer for farmer groups": {
+    "si": "ගොවි කණ්ඩායම් සඳහා තොග කොම්පෝස්ට් දීමනාව",
+    "ta": "விவசாயக் குழுக்களுக்கு மொத்த மக்கிய உரச் சலுகை"
+  },
+  "Request a wholesale offer": {
+    "si": "තොග දීමනාවක් ඉල්ලන්න",
+    "ta": "மொத்தச் சலுகை கோருங்கள்"
+  },
+  "Minimum 100 bags": {
+    "si": "අවම බෑග් 100ක්",
+    "ta": "குறைந்தபட்சம் 100 பைகள்"
+  },
+  "Sample supplier offer for bulk orders. Ask the supplier about pricing, availability and delivery terms.": {
+    "si": "තොග ඇණවුම් සඳහා ආදර්ශ සැපයුම්කරු දීමනාවකි. මිල, තොග සහ බෙදාහැරීමේ කොන්දේසි සැපයුම්කරුගෙන් විමසන්න.",
+    "ta": "மொத்த ஆர்டர்களுக்கான மாதிரி வழங்குநர் சலுகை. விலை, இருப்பு மற்றும் விநியோக விதிமுறைகளை வழங்குநரிடம் விசாரியுங்கள்."
+  },
+  "Farm equipment": {
+    "si": "කෘෂි උපකරණ",
+    "ta": "விவசாய உபகரணங்கள்"
+  },
+  "Equipment seller": {
+    "si": "උපකරණ විකුණුම්කරු",
+    "ta": "உபகரண விற்பனையாளர்"
+  },
+  "Equipment requests from farmers": {
+    "si": "ගොවීන්ගේ උපකරණ ඉල්ලීම්",
+    "ta": "விவசாயிகளின் உபகரணக் கோரிக்கைகள்"
+  },
+  "Find farmers looking for agricultural machinery and equipment.": {
+    "si": "කෘෂි යන්ත්‍ර සහ උපකරණ සොයන ගොවීන් සොයන්න.",
+    "ta": "விவசாய இயந்திரங்கள் மற்றும் உபகரணங்களைத் தேடும் விவசாயிகளைக் கண்டறியுங்கள்."
+  },
+  "Farm tractor available for sale": {
+    "si": "විකිණීමට ගොවි ට්‍රැක්ටරයක් ඇත",
+    "ta": "விவசாய டிராக்டர் விற்பனைக்கு உள்ளது"
+  },
+  "Sample equipment seller": {
+    "si": "ආදර්ශ උපකරණ විකුණුම්කරු",
+    "ta": "மாதிரி உபகரண விற்பனையாளர்"
+  },
+  "Request equipment price": {
+    "si": "උපකරණ මිල විමසන්න",
+    "ta": "உபகரண விலையைக் கேளுங்கள்"
+  },
+  "Agricultural business purchase": {
+    "si": "කෘෂි ව්‍යාපාර මිලදී ගැනීම",
+    "ta": "விவசாய வணிகக் கொள்வனவு"
+  },
+  "Sample equipment offer. Discuss tractor specifications, condition, warranty and delivery with the seller.": {
+    "si": "ආදර්ශ උපකරණ දැන්වීමකි. ට්‍රැක්ටරයේ පිරිවිතර, තත්ත්වය, වගකීම සහ බෙදාහැරීම විකුණුම්කරු සමඟ සාකච්ඡා කරන්න.",
+    "ta": "மாதிரி உபகரண விளம்பரம். டிராக்டர் விவரங்கள், நிலை, உத்தரவாதம் மற்றும் விநியோகத்தை விற்பனையாளருடன் பேசுங்கள்."
+  },
+  "Farmer seeking a water pump": {
+    "si": "ජල පොම්පයක් සොයන ගොවියෙක්",
+    "ta": "நீர்ப் பம்ப் தேடும் விவசாயி"
+  },
+  "Sample farmer · Equipment request": {
+    "si": "ආදර්ශ ගොවියා · උපකරණ ඉල්ලීම",
+    "ta": "மாதிரி விவசாயி · உபகரணக் கோரிக்கை"
+  },
+  "Request equipment quotes": {
+    "si": "උපකරණ මිල ගණන් ඉල්ලන්න",
+    "ta": "உபகரண விலைப்புள்ளி கோருங்கள்"
+  },
+  "Farm irrigation equipment": {
+    "si": "ගොවි වාරි උපකරණ",
+    "ta": "விவசாய நீர்ப்பாசன உபகரணங்கள்"
+  },
+  "Sample farmer request for an irrigation water pump. Sellers can discuss capacity, power requirements and delivery.": {
+    "si": "වාරි ජල පොම්පයක් සඳහා ආදර්ශ ගොවි ඉල්ලීමකි. ධාරිතාව, බලශක්ති අවශ්‍යතා සහ බෙදාහැරීම විකුණුම්කරුවන්ට සාකච්ඡා කළ හැක.",
+    "ta": "பாசன நீர்ப் பம்பிற்கான மாதிரி விவசாயிக் கோரிக்கை. கொள்ளளவு, மின்சாரத் தேவைகள் மற்றும் விநியோகத்தை விற்பனையாளர்கள் பேசலாம்."
+  },
+  "Product / listing name": {
+    "si": "නිෂ්පාදන / දැන්වීම් නම",
+    "ta": "தயாரிப்பு / விளம்பரப் பெயர்"
+  },
+  "Quality / grade / condition": {
+    "si": "ගුණාත්මකභාවය / ශ්‍රේණිය / තත්ත්වය",
+    "ta": "தரம் / வகுப்பு / நிலை"
+  },
+  "Quantity available": {
+    "si": "පවතින ප්‍රමාණය",
+    "ta": "கிடைக்கும் அளவு"
+  },
+  "Unit": {
+    "si": "ඒකකය",
+    "ta": "அலகு"
+  },
+  "kg, tonnes, bags, units, loads": {
+    "si": "කිලෝ, ටොන්, බෑග්, ඒකක, පැටවුම්",
+    "ta": "கிலோ, தொன், பைகள், அலகுகள், சுமைகள்"
+  },
+  "Contact phone number": {
+    "si": "සම්බන්ධතා දුරකථන අංකය",
+    "ta": "தொடர்புத் தொலைபேசி எண்"
+  },
+  "Town / village / pickup location": {
+    "si": "නගරය / ගම / රැගෙන යන ස්ථානය",
+    "ta": "நகரம் / கிராமம் / சேகரிக்கும் இடம்"
+  },
+  "Your contact number and location will be visible with this listing. Use sample details in this local preview.": {
+    "si": "ඔබේ දුරකථන අංකය සහ ස්ථානය මෙම දැන්වීම සමඟ පෙනෙනු ඇත. මෙම දේශීය පෙරදසුනේ ආදර්ශ විස්තර භාවිත කරන්න.",
+    "ta": "உங்கள் தொடர்பு எண்ணும் இடமும் இந்த விளம்பரத்தில் தெரியும். இந்த உள்ளக முன்னோட்டத்தில் மாதிரி விவரங்களைப் பயன்படுத்துங்கள்."
+  },
+  "Product images (up to 5)": {
+    "si": "නිෂ්පාදන ඡායාරූප (උපරිම 5)",
+    "ta": "தயாரிப்புப் படங்கள் (அதிகபட்சம் 5)"
+  },
+  "JPEG, PNG or WebP. Maximum 5 MB per image. Images are resized and stored on this device only.": {
+    "si": "JPEG, PNG හෝ WebP. එක් ඡායාරූපයක උපරිමය 5 MB. ඡායාරූප ප්‍රමාණය අඩු කර මෙම උපාංගයේ පමණක් සුරකියි.",
+    "ta": "JPEG, PNG அல்லது WebP. ஒரு படத்திற்கு அதிகபட்சம் 5 MB. படங்கள் அளவு குறைக்கப்பட்டு இந்தச் சாதனத்தில் மட்டுமே சேமிக்கப்படும்."
+  },
+  "Remove image": {
+    "si": "ඡායාරූපය ඉවත් කරන්න",
+    "ta": "படத்தை நீக்கு"
+  },
+  "Please wait for image processing.": {
+    "si": "ඡායාරූප සැකසෙන තෙක් රැඳී සිටින්න.",
+    "ta": "படங்கள் செயலாக்கப்படும் வரை காத்திருக்கவும்."
+  },
+  "Enter a valid quantity and Sri Lankan phone number.": {
+    "si": "වලංගු ප්‍රමාණයක් සහ ශ්‍රී ලාංකික දුරකථන අංකයක් ඇතුළත් කරන්න.",
+    "ta": "செல்லுபடியான அளவையும் இலங்கைத் தொலைபேசி எண்ணையும் உள்ளிடுங்கள்."
+  },
+  "Choose JPEG, PNG or WebP images under 5 MB each.": {
+    "si": "එක් එක් ඡායාරූපය 5 MB ට අඩු JPEG, PNG හෝ WebP ලෙස තෝරන්න.",
+    "ta": "ஒவ்வொன்றும் 5 MB க்குக் குறைவான JPEG, PNG அல்லது WebP படங்களைத் தேர்ந்தெடுக்கவும்."
+  },
+  "Unable to read image.": {
+    "si": "ඡායාරූපය කියවීමට නොහැක.",
+    "ta": "படத்தை வாசிக்க முடியவில்லை."
+  },
+  "Image is too large after resizing. Choose a smaller image.": {
+    "si": "ප්‍රමාණය අඩු කිරීමෙන් පසුවත් ඡායාරූපය විශාලය. කුඩා ඡායාරූපයක් තෝරන්න.",
+    "ta": "அளவு குறைத்த பின்னரும் படம் மிகப் பெரியது. சிறிய படத்தைத் தேர்ந்தெடுக்கவும்."
+  },
+  "You can add up to 5 images.": {
+    "si": "ඔබට ඡායාරූප 5ක් දක්වා එක් කළ හැක.",
+    "ta": "நீங்கள் அதிகபட்சம் 5 படங்களைச் சேர்க்கலாம்."
+  },
+  "Browser storage is full or unavailable. This change could not be saved.": {
+    "si": "බ්‍රවුසර ගබඩාව පිරී හෝ නොපවතී. මෙම වෙනස සුරැකීමට නොහැකි විය.",
+    "ta": "உலாவிச் சேமிப்பு நிரம்பியுள்ளது அல்லது கிடைக்கவில்லை. இந்த மாற்றத்தைச் சேமிக்க முடியவில்லை."
+  },
+  "← Back to marketplace": {
+    "si": "← නැවත වෙළඳපොළට",
+    "ta": "← சந்தைக்குத் திரும்பு"
+  },
+  "COMMUNITY DIRECTORY": {
+    "si": "ප්‍රජා නාමාවලිය",
+    "ta": "சமூக அடைவு"
+  },
+  "Registered profiles on this device. Live shared directories are not connected yet.": {
+    "si": "මෙම උපාංගයේ ලියාපදිංචි පැතිකඩ. සජීවී පොදු නාමාවලි තවම සම්බන්ධ කර නැත.",
+    "ta": "இந்தச் சாதனத்தில் பதிவுசெய்த சுயவிவரங்கள். நேரடி பகிரப்பட்ட அடைவுகள் இன்னும் இணைக்கப்படவில்லை."
+  },
+  "Edit my business profile": {
+    "si": "මගේ ව්‍යාපාර පැතිකඩ සංස්කරණය කරන්න",
+    "ta": "எனது வணிகச் சுயவிவரத்தைத் திருத்து"
+  },
+  "Search members": {
+    "si": "සාමාජිකයන් සොයන්න",
+    "ta": "உறுப்பினர்களைத் தேடு"
+  },
+  "No registered members match this section yet.": {
+    "si": "මෙම අංශයට ගැළපෙන ලියාපදිංචි සාමාජිකයන් තවම නැත.",
+    "ta": "இந்தப் பிரிவிற்குப் பொருத்தமான பதிவுசெய்த உறுப்பினர்கள் இன்னும் இல்லை."
+  },
+  "Related listings": {
+    "si": "අදාළ දැන්වීම්",
+    "ta": "தொடர்புடைய விளம்பரங்கள்"
+  },
+  "Your name, district and business details appear in your section directory. Publish your phone only if you want it displayed. Use sample details in this preview.": {
+    "si": "ඔබේ නම, දිස්ත්‍රික්කය සහ ව්‍යාපාර විස්තර අංශයේ නාමාවලියේ පෙනේ. දුරකථන අංකය පෙන්වීමට කැමති නම් පමණක් පළ කරන්න. මෙම පෙරදසුනේ ආදර්ශ විස්තර භාවිත කරන්න.",
+    "ta": "உங்கள் பெயர், மாவட்டம் மற்றும் வணிக விவரங்கள் பிரிவு அடைவில் தெரியும். எண்ணைக் காட்ட விரும்பினால் மட்டுமே வெளியிடுங்கள். இந்த முன்னோட்டத்தில் மாதிரி விவரங்களைப் பயன்படுத்துங்கள்."
+  },
+  "Display my contact number in the directory": {
+    "si": "මගේ සම්බන්ධතා අංකය නාමාවලියේ පෙන්වන්න",
+    "ta": "எனது தொடர்பு எண்ணை அடைவில் காட்டு"
+  },
+  "Transport business details": {
+    "si": "ප්‍රවාහන ව්‍යාපාර විස්තර",
+    "ta": "போக்குவரத்து வணிக விவரங்கள்"
+  },
+  "Vehicle type and capacity": {
+    "si": "වාහන වර්ගය සහ ධාරිතාව",
+    "ta": "வாகன வகையும் கொள்ளளவும்"
+  },
+  "Service areas / routes": {
+    "si": "සේවා ප්‍රදේශ / මාර්ග",
+    "ta": "சேவைப் பகுதிகள் / பாதைகள்"
+  },
+  "Rates and pricing basis": {
+    "si": "ගාස්තු සහ මිල පදනම",
+    "ta": "கட்டணங்களும் விலை அடிப்படையும்"
+  },
+  "Availability": {
+    "si": "ලබාගත හැකි බව",
+    "ta": "கிடைக்கும் நிலை"
+  },
+  "Available": {
+    "si": "ලබාගත හැක",
+    "ta": "கிடைக்கும்"
+  },
+  "Unavailable": {
+    "si": "ලබාගත නොහැක",
+    "ta": "கிடைக்காது"
+  },
+  "By arrangement": {
+    "si": "එකඟතාවය අනුව",
+    "ta": "ஏற்பாட்டின் பேரில்"
+  },
+  "Not specified": {
+    "si": "සඳහන් කර නැත",
+    "ta": "குறிப்பிடப்படவில்லை"
+  },
+  "Vehicle images (up to 5)": {
+    "si": "වාහන ඡායාරූප (උපරිම 5)",
+    "ta": "வாகனப் படங்கள் (அதிகபட்சம் 5)"
+  },
+  "Save business profile": {
+    "si": "ව්‍යාපාර පැතිකඩ සුරකින්න",
+    "ta": "வணிகச் சுயவிவரத்தைச் சேமி"
+  },
+  "View profile ↗": {
+    "si": "පැතිකඩ බලන්න ↗",
+    "ta": "சுயவிவரத்தைப் பார் ↗"
+  },
+  "Latest transport bid": {
+    "si": "නවතම ප්‍රවාහන ලංසුව",
+    "ta": "சமீபத்திய போக்குவரத்து ஏலம்"
+  },
+  "No transport bids yet": {
+    "si": "තවම ප්‍රවාහන ලංසු නැත",
+    "ta": "இன்னும் போக்குவரத்து ஏலங்கள் இல்லை"
+  },
+  "Rates describe the service. Bids are quotes for a specific load and route.": {
+    "si": "ගාස්තු සේවාව විස්තර කරයි. ලංසු නිශ්චිත බරක් සහ මාර්ගයක් සඳහා වේ.",
+    "ta": "கட்டணங்கள் சேவையை விவரிக்கின்றன. ஏலங்கள் குறிப்பிட்ட சுமை மற்றும் பாதைக்கான விலைப்புள்ளிகள்."
+  },
+  "View listing ↗": {
+    "si": "දැන්වීම බලන්න ↗",
+    "ta": "விளம்பரத்தைப் பார் ↗"
+  },
+  "Business profile saved on this device.": {
+    "si": "ව්‍යාපාර පැතිකඩ මෙම උපාංගයේ සුරැකිණි.",
+    "ta": "வணிகச் சுயவிவரம் இந்தச் சாதனத்தில் சேமிக்கப்பட்டது."
+  },
+  "e.g. LKR per km, per trip or per tonne": {
+    "si": "උදා. කි.මී., ගමන හෝ ටොන් එකකට රුපියල්",
+    "ta": "எ.கா. கி.மீ., பயணம் அல்லது தொன்னுக்கு ரூபாய்"
+  },
+  "Your name and district will appear in the directory for your registered role. Create a profile before creating listings. This is a local registration preview: profiles are not verified and sign-in has no secure authentication yet. Use sample contact details.": {
+    "si": "ඔබේ නම සහ දිස්ත්‍රික්කය ඔබේ භූමිකාවේ නාමාවලියේ පෙනෙනු ඇත. දැන්වීම් සෑදීමට පෙර පැතිකඩක් සාදන්න. මෙය දේශීය ලියාපදිංචි පෙරදසුනකි: පැතිකඩ සත්‍යාපනය කර නැති අතර ආරක්ෂිත පිවිසුම තවම නැත. ආදර්ශ සම්බන්ධතා විස්තර භාවිත කරන්න.",
+    "ta": "உங்கள் பெயரும் மாவட்டமும் உங்கள் பங்கின் அடைவில் தெரியும். விளம்பரங்களை உருவாக்கும் முன் சுயவிவரம் உருவாக்குங்கள். இது உள்ளகப் பதிவு முன்னோட்டம்: சுயவிவரங்கள் சரிபார்க்கப்படவில்லை; பாதுகாப்பான உள்நுழைவு இன்னும் இல்லை. மாதிரித் தொடர்பு விவரங்களைப் பயன்படுத்துங்கள்."
+  }
+};
+
+</script><script>
+const categories=[['all','✳','All opportunities'],['produce','🥬','Farm produce'],['buyers','🤝','Buyers'],['transport','🚚','Transport'],['supplies','🌱','Fertilizer'],['equipment','🚜','Farm equipment'],['land','🌾','Agricultural land'],['export','🌍','Export connections']];
+const districts=['Ampara','Anuradhapura','Badulla','Batticaloa','Colombo','Galle','Gampaha','Hambantota','Jaffna','Kalutara','Kandy','Kegalle','Kilinochchi','Kurunegala','Mannar','Matale','Matara','Monaragala','Mullaitivu','Nuwara Eliya','Polonnaruwa','Puttalam','Ratnapura','Trincomalee','Vavuniya'];
+const samples=[{id:'s1',category:'produce',title:'Fresh harvest, straight from the farm',owner:'Sample farmer · Produce seller',district:'Nuwara Eliya',price:'LKR 280 / kg · sample price',description:'Sample wholesale listing: 2,000 kg of fresh carrots available, minimum order 500 kg. Discuss harvest dates, quantity and collection directly with the farmer.',icon:'🥕',color:'#e8c6a2'},{id:'s2',category:'transport',title:'Make the journey to market easier',owner:'Sample transport provider',district:'Dambulla',price:'Request a quote',description:'Sample transport service for farm produce. Enquire about route, vehicle capacity, collection date and handling requirements.',icon:'🚚',color:'#d8ddbf'},{id:'s3',category:'supplies',title:'Organic compost for your next season',owner:'Sample fertilizer supplier',district:'Kurunegala',price:'LKR 1,200 / bag · sample price',description:'Sample wholesale supplier listing: minimum order 50 bags of 25 kg compost. Confirm product details, availability and delivery arrangements with the supplier.',icon:'🌱',color:'#cad9bc'},{id:'s4',category:'land',title:'Room for your next growing chapter',owner:'Sample land seller',district:'Anuradhapura',price:'Contact for terms',description:'Sample agricultural land listing. Enquire about acreage, water access, ownership documents and viewing arrangements.',icon:'🌾',color:'#e0d5ae'},{id:'s5',category:'export',title:'Connecting local harvests to new markets',owner:'Sample exporter',district:'Colombo',price:'Discuss supply requirements',description:'Sample exporter seeking conversations with growers. Discuss crop type, quality specifications, volumes and delivery schedules.',icon:'🌍',color:'#bfd4cc'},{id:'s6',category:'buyers',title:'A buyer for your next rice harvest',owner:'Sample produce buyer',district:'Polonnaruwa',price:'Enquire for buying terms',description:'Sample buyer enquiry for paddy. Share variety, expected quantity and harvest date to start a conversation.',icon:'🌾',color:'#eadbbd'}];
+for(const listing of samples){listing.intent=['s5','s6'].includes(listing.id)?'request':'offer';listing.authorRole=({'s1':'Farmer','s2':'Transport provider','s3':'Fertilizer supplier','s4':'Land seller','s5':'Exporter','s6':'Wholesale buyer'})[listing.id]}
+samples.find(x=>x.id==='s3').catalogType='product';samples.find(x=>x.id==='s3').packSize='25 kg';samples.find(x=>x.id==='s3').stock='100 bags';
+samples.push({id:'s10',category:'supplies',intent:'offer',authorRole:'Fertilizer supplier',catalogType:'offer',title:'Bulk compost offer for farmer groups',owner:'Sample fertilizer supplier',district:'Kurunegala',price:'Request a wholesale offer',minimum:'Minimum 100 bags',packSize:'25 kg',stock:'200 bags',description:'Sample supplier offer for bulk orders. Ask the supplier about pricing, availability and delivery terms.',icon:'🌱',color:'#cad9bc'},
+{id:'s7',category:'transport',intent:'request',authorRole:'Farmer',title:'Transport needed for a 2-tonne harvest',owner:'Sample farmer · Transport request',district:'Kurunegala',price:'Request for transport quotes',minimum:'Full load: 2 tonnes',description:'Sample farmer request: transport a 2-tonne harvest from Kurunegala to Colombo. Confirm pickup date and vehicle suitability through an enquiry.',icon:'🚚',color:'#d8ddbf'},
+{id:'s8',category:'supplies',intent:'request',authorRole:'Farmer',title:'Farmer needs 50 bags of compost',owner:'Sample farmer · Fertilizer request',district:'Anuradhapura',price:'Request for wholesale quotes',minimum:'50 bags of 25 kg',description:'Sample farmer request for bulk compost. Suppliers can discuss product specifications, availability and delivery.',icon:'🌱',color:'#cad9bc'},
+{id:'s9',category:'land',intent:'request',authorRole:'Farmer',title:'Farmer looking for agricultural land',owner:'Sample farmer · Land request',district:'Polonnaruwa',price:'Discuss land requirements',minimum:'Agricultural business enquiry',description:'Sample farmer seeking agricultural land with water access. Discuss acreage, ownership documents and viewing arrangements.',icon:'🌾',color:'#e0d5ae'});
+samples.push({id:'s11',category:'equipment',intent:'offer',authorRole:'Equipment seller',title:'Farm tractor available for sale',owner:'Sample equipment seller',district:'Kurunegala',price:'Request equipment price',minimum:'Agricultural business purchase',description:'Sample equipment offer. Discuss tractor specifications, condition, warranty and delivery with the seller.',icon:'🚜',color:'#d4ddbd'},{id:'s12',category:'equipment',intent:'request',authorRole:'Farmer',title:'Farmer seeking a water pump',owner:'Sample farmer · Equipment request',district:'Anuradhapura',price:'Request equipment quotes',minimum:'Farm irrigation equipment',description:'Sample farmer request for an irrigation water pump. Sellers can discuss capacity, power requirements and delivery.',icon:'🚜',color:'#d4ddbd'});
+const $=s=>document.querySelector(s);const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let storageAvailable=true;function read(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}}const stored=read('fd-preview-v1',{})||{};let state={listings:Array.isArray(stored.listings)?stored.listings:[],saved:Array.isArray(stored.saved)?stored.saved:[],enquiries:Array.isArray(stored.enquiries)?stored.enquiries:[]};state.bids=Array.isArray(stored.bids)?stored.bids:[];let view='all',category='all';
+let profiles=read('fd-profiles-v1',[]);if(!Array.isArray(profiles))profiles=[];let currentProfileId=null;let pendingListing=false;function currentProfile(){return profiles.find(p=>p.id===currentProfileId)||null}
+let feedScope='recommended';let pendingImages=[];let processingImages=false;
+const roleViews={Farmer:['Your farming business','Find wholesale buyers, transport, fertilizer, land and export connections.'],'Wholesale buyer':['Find wholesale farm produce','Discover farmers offering harvests for bulk purchase.'],'Transport provider':['Transport jobs from farmers','See farmers requesting transport for their harvests and supplies.'],'Fertilizer supplier':['Your fertilizer business','Manage your products and offers, and respond to farmers needing fertilizer.'],'Land seller':['Land requests from farmers','See farmers looking for agricultural land.'],'Equipment seller':['Equipment requests from farmers','Find farmers looking for agricultural machinery and equipment.'],Exporter:['Source produce from farmers','Connect with farmers offering produce for wholesale export supply.']};
+function relevantToRole(listing,profile){if(!profile)return true;if(listing.profileId===profile.id)return profile.role==='Fertilizer supplier'&&listing.category==='supplies'&&listing.intent==='offer';const intent=listing.intent||'offer';if(profile.role==='Farmer')return (['buyers','export'].includes(listing.category)&&intent==='request')||(['transport','supplies','land','equipment'].includes(listing.category)&&intent==='offer');if(['Wholesale buyer','Exporter'].includes(profile.role))return listing.category==='produce'&&intent==='offer'&&listing.authorRole==='Farmer';if(profile.role==='Transport provider'&&listing.category==='produce'&&intent==='offer'&&listing.authorRole==='Farmer')return true;const categoryByRole={'Transport provider':'transport','Fertilizer supplier':'supplies','Land seller':'land','Equipment seller':'equipment'};return listing.category===categoryByRole[profile.role]&&intent==='request'&&listing.authorRole==='Farmer'}
+function updatePerspective(){const profile=currentProfile(),copy=profile?roleViews[profile.role]:['A marketplace built around farmers','Register to see opportunities matched to your role.'];$('#perspective-title').textContent=copy[0];$('#perspective-description').textContent=copy[1];$('#feed-scope').hidden=!profile;$('#feed-scope').value=feedScope;$('#catalog-scope').hidden=profile?.role!=='Fertilizer supplier';$('#role-label').textContent=profile?profile.role:'Guest'}
+function persist(){try{localStorage.setItem('fd-preview-v1',JSON.stringify(state));return true}catch{storageAvailable=false;toast('Browser storage is full or unavailable. This change could not be saved.');return false}}function toast(message){$('#toast').textContent=message;$('#toast').style.display='block';clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').style.display='none',3500)}function all(){return [...state.listings.filter(x=>x.wholesale===true&&x.profileId),...samples]}function label(c){return categories.find(x=>x[0]===c)?.[2]||c}function option(value){return `<option value="${safe(value)}">${safe(value)}</option>`}
+$('#categories').innerHTML=categories.map(([id,icon,name])=>`<button class="category ${id==='all'?'selected':''}" data-category="${id}" aria-pressed="${id==='all'}"><span aria-hidden="true">${icon}</span><b>${name}</b></button>`).join('');
+$('#register-district').innerHTML=districts.map(option).join('');
+$('#district').insertAdjacentHTML('beforeend',[...new Set([...districts,...samples.map(x=>x.district)])].sort().map(option).join(''));$('#form-district').innerHTML=districts.map(option).join('');$('#form-category').innerHTML=categories.slice(1).map(([id,,name])=>`<option value="${id}">${name}</option>`).join('');
+function render(){window.renderDirectory?.();updateAccount();updatePerspective();const query=$('#search').value.trim().toLowerCase(),district=$('#district').value;$('#saved-count').textContent=state.saved.length;$('#view-title').textContent=view==='saved'?'Your saved opportunities':view==='enquiries'?'Your enquiry drafts':(category==='all'?'Discover your next opportunity':label(category));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===view));let rows=all().filter(x=>(view!=='all'||!currentProfile()||feedScope==='all'||(feedScope==='mine'?x.profileId===currentProfile().id:feedScope==='catalog'?x.profileId===currentProfile().id&&x.category==='supplies'&&x.intent==='offer':relevantToRole(x,currentProfile())))&&(view!=='saved'||state.saved.includes(x.id))&&(category==='all'||x.category===category)&&(!district||x.district===district)&&[x.title,x.owner,x.description,x.district,...[x.title,x.description,x.district].map(v=>window.fdTranslate?window.fdTranslate(v):v)].join(' ').toLowerCase().includes(query));if($('#sort').value==='title')rows.sort((a,b)=>a.title.localeCompare(b.title));if(view==='enquiries'){const drafts=state.enquiries.filter(x=>{const listing=all().find(y=>y.id===x.listingId);return listing&&rows.some(y=>y.id===listing.id)});$('#grid').innerHTML=drafts.map(x=>`<article class="enquiry"><span class="badge">Local draft · Not sent</span><h3>${safe(all().find(y=>y.id===x.listingId).title)}</h3><p>${safe(x.message)}</p><button class="detail-button" data-remove="${safe(x.id)}">Delete draft</button></article>`).join('');$('#empty').hidden=!!drafts.length;$('#results').textContent=`${drafts.length} enquiry drafts`;return}const cardHtml=x=>`<article class="card"><div class="art" style="--art:${x.color}">${x.images?.length?`<img class="listing-cover" src="${safe(x.images[0])}" alt="${safe(x.title)}">`:`<span aria-hidden="true">${x.icon}</span>`}<button class="save" data-save="${safe(x.id)}" aria-label="${state.saved.includes(x.id)?'Unsave':'Save'} ${safe(x.title)}" aria-pressed="${state.saved.includes(x.id)}">${state.saved.includes(x.id)?'♥':'♡'}</button></div><div class="card-body"><span class="badge">${safe(label(x.category))}</span> <span class="badge">${x.intent==='request'?'Needed':'Offering'}</span><span class="location">${safe(x.district)}</span><h3>${safe(x.title)}</h3><p class="owner">${safe(x.owner)}</p>${x.category==='supplies'&&x.intent==='offer'?`<p class="muted">${x.catalogType==='offer'?'Fertilizer offer':'Fertilizer product'}</p>`:''}<p class="muted minimum">${safe(x.minimum||'Wholesale / business enquiry')}</p><div class="card-bottom"><strong>${safe(x.price)}</strong><button class="detail-button" data-detail="${safe(x.id)}">View ↗</button></div></div></article>`;$('#grid').innerHTML=category==='all'?categories.slice(1).map(([id,,name])=>{const sectionRows=rows.filter(x=>x.category===id);return sectionRows.length?`<section class="market-section" aria-label="${safe(name)}"><div class="section-heading"><h3>${safe(name)}</h3><button class="detail-button" data-category="${id}">Browse section ↗</button></div><div class="section-listings">${id==='supplies'?fertilizerGroups(sectionRows,cardHtml):sectionRows.map(cardHtml).join('')}</div></section>`:''}).join(''):category==='supplies'?fertilizerGroups(rows,cardHtml):rows.map(cardHtml).join('');$('#empty').hidden=!!rows.length;$('#results').textContent=`${rows.length} opportunities${view==='saved'?' saved':''}`}
+document.addEventListener('click',event=>{const categoryButton=event.target.closest('[data-category]');if(categoryButton){window.openSection(categoryButton.dataset.category);return}const nav=event.target.closest('[data-view]');if(nav){window.clearSection?.();view=nav.dataset.view;render();$('#market').scrollIntoView({behavior:'smooth'})}const save=event.target.closest('[data-save]');if(save){const id=save.dataset.save;state.saved=state.saved.includes(id)?state.saved.filter(x=>x!==id):[...state.saved,id];persist();render()}const detail=event.target.closest('[data-detail]');if(detail)showDetail(detail.dataset.detail);const remove=event.target.closest('[data-remove]');if(remove){state.enquiries=state.enquiries.filter(x=>x.id!==remove.dataset.remove);persist();render()}if(event.target.closest('.close'))event.target.closest('dialog').close()});
+function showDetail(id){const x=all().find(y=>y.id===id);$('#detail-content').innerHTML=`<p class="eyebrow">${safe(label(x.category))} · ${safe(x.district)}</p><h2>${safe(x.title)}</h2><p class="muted">${safe(x.owner)}</p><h3 data-no-translate>${safe(x.price)}</h3>${listingFactsHtml(x)}<p><strong>Wholesale terms:</strong> ${safe(x.minimum||'Bulk supply or agricultural business enquiry — confirm terms with provider.')}</p>${x.category==='supplies'&&x.intent==='offer'?`<p><strong>Pack size</strong>: <span data-no-translate>${safe(x.packSize||'—')}</span></p>`:''}<p class="muted">${safe(x.description)}</p>${biddingHtml(x)}<form id="enquiry-form"><label>Your enquiry<textarea name="message" required maxlength="1500" rows="4" placeholder="Introduce yourself and ask about availability, quantity or terms."></textarea></label><p class="muted">Save a local draft. Messaging and verified accounts are not connected yet.</p><button class="primary">Save enquiry draft</button></form>`;$('#enquiry-form').onsubmit=e=>{e.preventDefault();state.enquiries.unshift({id:crypto.randomUUID(),listingId:id,message:new FormData(e.target).get('message').trim(),createdAt:new Date().toISOString()});const saved=persist();$('#detail').close();render();if(saved)toast('Enquiry draft saved on this device. Not sent.')};bindBidding(x);if(!$('#detail').open)$('#detail').showModal()}
+for(const id of ['#post','#community-post'])$(id).onclick=requestListing;for(const id of ['#search','#district','#sort'])$(id).addEventListener(id==='#search'?'input':'change',render);
+$('#listing-form').onsubmit=e=>{e.preventDefault();const profile=currentProfile();if(!profile){$('#listing-dialog').close();pendingListing=true;openAccount();return}if(processingImages){toast('Please wait for image processing.');return}if(!e.target.reportValidity())return;const fields=Object.fromEntries(new FormData(e.target));const error=validateListingFields(fields);if(error){toast(error);return}const listing={...fields,images:[...pendingImages],owner:profile.name,authorRole:profile.role,profileId:profile.id,wholesale:true,id:crypto.randomUUID(),icon:categories.find(c=>c[0]===fields.category)[1],color:'#d5dfc6'};state.listings.unshift(listing);if(!persist()){state.listings=state.listings.filter(x=>x.id!==listing.id);return}e.target.reset();pendingImages=[];renderImagePreviews();$('#listing-dialog').close();view='all';feedScope='mine';category='all';$('#search').value='';$('#district').value='';document.querySelectorAll('[data-category]').forEach(b=>{b.classList.toggle('selected',b.dataset.category==='all');b.setAttribute('aria-pressed',b.dataset.category==='all')});render();toast('Listing saved locally. It is not publicly published.')};render();
+
+function updateAccount(){const profile=currentProfile();$('#account').textContent=profile?profile.name:'Register / Sign in';$('#listing-owner').textContent=profile?`Listing as ${profile.name} · ${profile.role}`:'';$('#account-status').textContent=profile?`Local preview signed in as ${profile.name}. Not a verified account.`:'You are not signed in.';$('#signout').hidden=!profile}
+function openAccount(){const select=$('#signin-profile');select.innerHTML='<option value="">Choose your registered demo profile</option>'+profiles.map(p=>`<option value="${safe(p.id)}">${safe(p.name)} · ${safe(p.role)}</option>`).join('');updateAccount();$('#account-dialog').showModal()}
+function requestListing(){if(!currentProfile()){pendingListing=true;openAccount();return}updateAccount();const role=currentProfile().role;$('#form-category').value=({'Farmer':'produce','Wholesale buyer':'buyers','Transport provider':'transport','Fertilizer supplier':'supplies','Land seller':'land','Exporter':'export','Equipment seller':'equipment'})[role];$('#form-intent').value=['Wholesale buyer','Exporter'].includes(role)?'request':'offer';$('#listing-phone').value=currentProfile().phone||'';updateCatalogForm();$('#listing-dialog').showModal()}
+function finishSignIn(id){currentProfileId=id;feedScope='recommended';view='all';category='all';$('#search').value='';$('#district').value='';$('#account-dialog').close();render();if(pendingListing){pendingListing=false;requestListing()}}
+$('#account').onclick=()=>{pendingListing=false;openAccount()};
+$('#signout').onclick=()=>{currentProfileId=null;feedScope='recommended';pendingListing=false;$('#listing-dialog').close();$('#account-dialog').close();render();toast('Signed out of the local preview.')};
+$('#register-form').onsubmit=e=>{e.preventDefault();if(!e.target.reportValidity())return;const data=Object.fromEntries(new FormData(e.target));const name=data.name.trim(),phone=data.phone.replace(/^0/,'+94');if(!name||!data.wholesale||!districts.includes(data.district)||!/^\+94[0-9]{9}$/.test(phone)){toast('Complete your profile and accept wholesale-only trading.');return}if(profiles.some(p=>p.phone===phone)){toast('This number is already registered locally. Choose your profile below.');return}const profile={id:crypto.randomUUID(),name,phone,role:data.role,district:data.district,wholesaleAcceptedAt:new Date().toISOString()};const next=[...profiles,profile];try{localStorage.setItem('fd-profiles-v1',JSON.stringify(next))}catch{toast('Registration could not be saved. Please enable browser storage.');return}profiles=next;e.target.reset();finishSignIn(profile.id);toast('Local profile registered. You can now create wholesale listings.')};
+$('#signin-form').onsubmit=e=>{e.preventDefault();const id=$('#signin-profile').value;if(!profiles.some(p=>p.id===id)){toast('Choose a registered local profile.');return}finishSignIn(id)};
+
+$('#feed-scope').onchange=()=>{feedScope=$('#feed-scope').value;category='all';render()};
+
+function biddingEligible(listing){return listing&&listing.category==='produce'&&listing.intent==='offer'&&listing.authorRole==='Farmer'}
+function bidTypeFor(profile,listing){if(!profile||!biddingEligible(listing)||profile.id===listing.profileId)return null;if(['Wholesale buyer','Exporter'].includes(profile.role))return 'buyer';if(profile.role==='Transport provider')return 'transport';return null}
+function submitBid(listingId,input){const listing=all().find(x=>x.id===listingId),profile=currentProfile(),type=bidTypeFor(profile,listing);if(!type)return {ok:false,message:'Sign in with an eligible buyer or transport profile to bid.'};const amount=Number(input.amount),quantity=String(input.quantity||'').trim(),terms=String(input.terms||'').trim();if(!Number.isFinite(amount)||amount<=0||Math.abs(Math.round(amount*100)-amount*100)>0.000001||amount>1000000000||!quantity||quantity.length>120||!terms||terms.length>1000)return {ok:false,message:'Enter a valid amount, quantity or load, and bid terms.'};const next={id:crypto.randomUUID(),listingId,type,profileId:profile.id,bidder:profile.name,role:profile.role,amount,quantity,terms,updatedAt:new Date().toISOString()};const existing=state.bids.findIndex(b=>b.listingId===listingId&&b.profileId===profile.id&&b.type===type);if(existing>=0){next.id=state.bids[existing].id;state.bids[existing]=next}else state.bids.unshift(next);return {ok:true,persisted:persist()}}
+function biddingHtml(listing){if(!biddingEligible(listing))return '';const profile=currentProfile(),type=bidTypeFor(profile,listing);const lane=(kind,title)=>{const bids=state.bids.filter(b=>b.listingId===listing.id&&b.type===kind).sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));return `<section class="bid-lane"><h3>${title}</h3><p class="muted">${kind==='buyer'?'Offers to purchase produce. Total price for the stated quantity.':'Quotes to transport produce. Total transport cost for the stated load.'}</p>${bids.length?bids.map(b=>`<article class="bid-row"><strong data-no-translate>${safe(b.bidder)}</strong><span>${safe(b.role)}</span><b data-no-translate>LKR ${Number(b.amount).toLocaleString('en-LK',{minimumFractionDigits:2,maximumFractionDigits:2})}</b><p data-no-translate>${safe(b.quantity)}</p><p data-no-translate>${safe(b.terms)}</p><time data-no-translate datetime="${safe(b.updatedAt)}">${safe(new Date(b.updatedAt).toLocaleString('en-GB',{timeZone:'Asia/Colombo'}))} (Sri Lanka)</time></article>`).join(''):'<p class="muted">No bids yet. Be the first to bid.</p>'}</section>`};return `<section class="bidding"><p class="eyebrow">OPEN BIDDING</p><h2>Buyer bids & transport quotes</h2><p class="muted">All bids on this device are visible here. This demo does not share bids between users or devices. Latest bid per bidder is shown. No winner or payment is automatic.</p>${lane('buyer','Buyer bids')}${lane('transport','Transport bids')}${type?`<form id="bid-form"><h3>${type==='buyer'?'Place a buyer bid':'Place a transport bid'}</h3><p class="muted">Your name, role, amount and terms will be visible on this local bid board.</p><label>Total amount (LKR)<input type="number" name="amount" required min="0.01" step="0.01" max="1000000000"></label><label>${type==='buyer'?'Quantity to purchase':'Load and route covered'}<input name="quantity" required maxlength="120"></label><label>Bid terms<textarea name="terms" required maxlength="1000" rows="3"></textarea></label><button class="primary">Submit / update open bid</button></form>`:`<p class="muted">${profile&&profile.id===listing.profileId?'You own this listing. Review buyer bids and transport quotes here.':'Sign in as a wholesale buyer, exporter or transport provider to bid.'}</p>`}</section>`}
+function bindBidding(listing){if(!biddingEligible(listing)||!$('#bid-form'))return;$('#bid-form').onsubmit=event=>{event.preventDefault();const result=submitBid(listing.id,Object.fromEntries(new FormData(event.target)));if(!result.ok){toast(result.message);return}showDetail(listing.id);if(result.persisted)toast('Open bid saved locally. Not sent to other devices.')};}
+
+function updateCatalogForm(){const show=$('#form-category').value==='supplies'&&$('#form-intent').value==='offer';$('#fertilizer-fields').hidden=!show;for(const field of ['#pack-size']){$(field).required=show;$(field).disabled=!show}$('#catalog-type').disabled=!show}
+$('#form-category').addEventListener('change',updateCatalogForm);$('#form-intent').addEventListener('change',updateCatalogForm);
+function fertilizerGroups(rows,cardHtml){return [['product','Fertilizer products'],['offer','Fertilizer offers'],['request','Farmer fertilizer requests']].map(([type,title])=>{const matches=rows.filter(x=>type==='request'?x.intent==='request':x.intent==='offer'&&(x.catalogType||'product')===type);return matches.length?`<div class="catalog-group"><h3>${title}</h3><div class="section-listings">${matches.map(cardHtml).join('')}</div></div>`:''}).join('')}
+
+function validateListingFields(fields){if(!categories.slice(1).some(c=>c[0]===fields.category)||!['offer','request'].includes(fields.intent))return 'Please complete each field.';for(const key of ['title','minimum','price','description','quality','unit','location','phone','district'])if(!String(fields[key]||'').trim())return 'Please complete each field.';if(!districts.includes(fields.district)||!Number.isFinite(Number(fields.quantity))||Number(fields.quantity)<=0||! /^(?:0[0-9]{9}|\+94[0-9]{9})$/.test(fields.phone))return 'Enter a valid quantity and Sri Lankan phone number.';if(fields.category==='supplies'&&fields.intent==='offer'&&!fields.packSize?.trim())return 'Enter pack size and available quantity.';return null}
+function listingFactsHtml(x){const fact=(name,value)=>value?`<div><dt>${name}</dt><dd data-no-translate>${safe(value)}</dd></div>`:'';return `${x.images?.length?`<div class="listing-gallery">${x.images.map((image,index)=>`<img src="${safe(image)}" alt="${safe(x.title)} ${index+1}" loading="lazy">`).join('')}</div>`:''}<dl class="listing-facts">${fact('Quality / grade / condition',x.quality)}${fact('Quantity available',x.quantity?`${x.quantity} ${x.unit||''}`:null)}${fact('Town / village / pickup location',x.location)}${x.phone&&/^(?:0[0-9]{9}|\+94[0-9]{9})$/.test(x.phone)?`<div><dt>Contact phone number</dt><dd><a data-no-translate href="tel:${safe(x.phone)}">${safe(x.phone)}</a></dd></div>`:''}</dl>`}
+function renderImagePreviews(){$('#image-previews').innerHTML=pendingImages.map((image,index)=>`<div><img src="${safe(image)}" alt="${index+1}"><button type="button" data-remove-image="${index}">Remove image</button></div>`).join('')}
+async function compressListingImage(file){if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>5*1024*1024)throw Error('Choose JPEG, PNG or WebP images under 5 MB each.');const source=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=()=>reject(Error('Unable to read image.'));reader.readAsDataURL(file)});const image=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(Error('Unable to read image.'));img.src=source});const scale=Math.min(1,1000/image.width,1000/image.height);const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(image.width*scale));canvas.height=Math.max(1,Math.round(image.height*scale));const ctx=canvas.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(image,0,0,canvas.width,canvas.height);let encoded=canvas.toDataURL('image/jpeg',0.72);if(encoded.length>400000)encoded=canvas.toDataURL('image/jpeg',0.4);if(encoded.length>500000)throw Error('Image is too large after resizing. Choose a smaller image.');return encoded}
+$('#listing-images').onchange=async event=>{if(processingImages)return;const files=[...event.target.files];if(files.length+pendingImages.length>5){toast('You can add up to 5 images.');event.target.value='';return}processingImages=true;try{const additions=[];for(const file of files)additions.push(await compressListingImage(file));pendingImages.push(...additions);renderImagePreviews()}catch(error){toast(error.message)}finally{processingImages=false;event.target.value=''}};
+document.addEventListener('click',event=>{const button=event.target.closest('[data-remove-image]');if(button&&!processingImages){pendingImages.splice(Number(button.dataset.removeImage),1);renderImagePreviews()}});
+
+</script><script>
+/* Hash routes keep section pages and browser Back usable in the standalone file. */
+let directoryCategory='all',vehicleDraft=[],vehicleBusy=false;
+const directoryRoles={produce:'Farmer',buyers:'Wholesale buyer',transport:'Transport provider',supplies:'Fertilizer supplier',equipment:'Equipment seller',land:'Land seller',export:'Exporter'};
+window.clearSection=()=>{directoryCategory='all';history.replaceState(null,'','#/');document.body.classList.remove('section-page');$('#directory-page').hidden=true;};
+window.openSection=id=>{if(!categories.some(c=>c[0]===id))id='all';location.hash=id==='all'?'#/':`#/${id}`;applySectionRoute();};
+function applySectionRoute(){const id=location.hash.replace(/^#\//,'');directoryCategory=directoryRoles[id]?id:'all';category=directoryCategory;view='all';feedScope=directoryCategory==='all'?'recommended':'all';$('#search').value='';$('#district').value='';$('#member-search').value='';$('#member-district').value='';render();window.scrollTo?.({top:0,behavior:'smooth'});}
+function directoryMembers(id,query='',district=''){return profiles.filter(p=>p.role===directoryRoles[id]&&(!district||p.district===district)&&[p.name,p.district,p.location,p.bio,p.vehicle,p.routes].filter(Boolean).join(' ').toLowerCase().includes(query.toLowerCase())).sort((a,b)=>a.name.localeCompare(b.name));}
+function latestTransportBid(id){return state.bids.filter(b=>b.profileId===id&&b.type==='transport').sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt))[0];}
+function detailFact(name,value){return `<p><strong>${name}</strong><br><span data-no-translate>${safe(value||'—')}</span></p>`;}
+window.renderDirectory=()=>{const active=directoryCategory!=='all';document.body.classList.toggle('section-page',active);$('#directory-page').hidden=!active;if(!active)return;category=directoryCategory;$('#directory-title').textContent=label(directoryCategory);$('#edit-profile').hidden=!currentProfile();const members=directoryMembers(directoryCategory,$('#member-search').value.trim(),$('#member-district').value);$('#member-count').textContent=`${members.length} registered members`;$('#member-empty').hidden=!!members.length;$('#member-grid').innerHTML=members.map(p=>{const transport=p.role==='Transport provider',bid=latestTransportBid(p.id);return `<article class="card member-card">${transport?`<div class="art" style="--art:#d8ddbf">${p.vehicleImages?.length?`<img class="listing-cover" src="${safe(p.vehicleImages[0])}" alt="${safe(p.vehicle||p.name)}">`:'<span>🚚</span>'}</div>`:''}<div class="card-body"><span class="badge">${safe(p.role)}</span><h3 data-no-translate>${safe(p.name)}</h3><p>${safe(p.district)}</p>${p.location?`<p data-no-translate>${safe(p.location)}</p>`:''}${transport?`${detailFact('Vehicle type and capacity',p.vehicle)}${detailFact('Rates and pricing basis',p.rate)}<p><strong>Availability</strong><br>${safe(p.availability||'Not specified')}</p><p><strong>Latest transport bid</strong><br>${bid?`<span data-no-translate>LKR ${Number(bid.amount).toLocaleString('en-LK')}</span>`:'No transport bids yet'}</p>`:''}<button class="detail-button" data-member="${safe(p.id)}">View profile ↗</button></div></article>`}).join('');};
+function showMember(id){const p=profiles.find(x=>x.id===id);if(!p)return;const bids=state.bids.filter(b=>b.profileId===p.id&&b.type==='transport').sort((a,b)=>b.updatedAt.localeCompare(a.updatedAt));$('#member-detail').innerHTML=`<p class="eyebrow">${safe(p.role)}</p><h2 data-no-translate>${safe(p.name)}</h2><p>${safe(p.district)}</p>${detailFact('Town / village / pickup location',p.location)}${detailFact('Description',p.bio)}${p.showPhone&&/^(?:0[0-9]{9}|\+94[0-9]{9})$/.test(p.phone)?`<p><strong>Contact phone number</strong><br><a data-no-translate href="tel:${safe(p.phone)}">${safe(p.phone)}</a></p>`:''}${p.role==='Transport provider'?`${p.vehicleImages?.length?`<div class="listing-gallery">${p.vehicleImages.map(image=>`<img src="${safe(image)}" alt="${safe(p.vehicle||p.name)}">`).join('')}</div>`:''}${detailFact('Vehicle type and capacity',p.vehicle)}${detailFact('Service areas / routes',p.routes)}${detailFact('Rates and pricing basis',p.rate)}<p><strong>Availability</strong><br>${safe(p.availability||'Not specified')}</p><h3>Transport bids</h3><p class="muted">Rates describe the service. Bids are quotes for a specific load and route.</p>${bids.length?bids.map(b=>`<article class="bid-row"><strong data-no-translate>${safe(all().find(x=>x.id===b.listingId)?.title||b.listingId)}</strong><b data-no-translate>LKR ${Number(b.amount).toLocaleString('en-LK')}</b><p data-no-translate>${safe(b.quantity)}</p><p data-no-translate>${safe(b.terms)}</p><button class="detail-button" data-bid-listing="${safe(b.listingId)}">View listing ↗</button></article>`).join(''):'<p>No transport bids yet</p>'}`:''}`;$('#member-dialog').showModal();}
+function renderVehiclePreviews(){$('#vehicle-previews').innerHTML=vehicleDraft.map((src,i)=>`<div><img src="${safe(src)}" alt="${i+1}"><button type="button" data-remove-vehicle="${i}">Remove image</button></div>`).join('');}
+function editBusinessProfile(){const p=currentProfile();if(!p)return;const form=$('#profile-form');for(const key of ['name','district','location','bio','vehicle','routes','rate','availability'])form.elements[key].value=p[key]||(key==='availability'?'Not specified':'');form.elements.showPhone.checked=!!p.showPhone;$('#vehicle-fields').hidden=p.role!=='Transport provider';vehicleDraft=[...(p.vehicleImages||[])];renderVehiclePreviews();$('#profile-dialog').showModal();}
+function saveBusinessProfile(input){const p=currentProfile();if(!p)return false;if(!String(input.name||'').trim()||!districts.includes(input.district))return false;const next=profiles.map(item=>item.id!==p.id?item:{...item,name:String(input.name).trim(),district:input.district,location:String(input.location||'').trim(),bio:String(input.bio||'').trim(),showPhone:input.showPhone==='on',...(p.role==='Transport provider'?{vehicle:String(input.vehicle||'').trim(),routes:String(input.routes||'').trim(),rate:String(input.rate||'').trim(),availability:['Available','Unavailable','By arrangement'].includes(input.availability)?input.availability:'Not specified',vehicleImages:[...vehicleDraft]}:{})});try{localStorage.setItem('fd-profiles-v1',JSON.stringify(next));profiles=next;return true;}catch{toast('Browser storage is full or unavailable. This change could not be saved.');return false;}}
+$('#profile-district').innerHTML=districts.map(option).join('');$('#member-district').insertAdjacentHTML('beforeend',districts.map(option).join(''));
+$('#edit-profile').onclick=editBusinessProfile;
+$('#profile-form').onsubmit=event=>{event.preventDefault();if(vehicleBusy){toast('Please wait for image processing.');return;}if(!event.target.reportValidity())return;if(saveBusinessProfile(Object.fromEntries(new FormData(event.target)))){$('#profile-dialog').close();render();toast('Business profile saved on this device.');}};
+$('#vehicle-images').onchange=async event=>{if(vehicleBusy)return;const files=[...event.target.files];if(vehicleDraft.length+files.length>5){toast('You can add up to 5 images.');event.target.value='';return;}vehicleBusy=true;try{const added=[];for(const file of files)added.push(await compressListingImage(file));vehicleDraft.push(...added);renderVehiclePreviews();}catch(error){toast(error.message);}finally{vehicleBusy=false;event.target.value='';}};
+$('#member-search').addEventListener('input',()=>window.renderDirectory());$('#member-district').addEventListener('change',()=>window.renderDirectory());
+document.addEventListener('click',event=>{const member=event.target.closest('[data-member]');if(member)showMember(member.dataset.member);const remove=event.target.closest('[data-remove-vehicle]');if(remove&&!vehicleBusy){vehicleDraft.splice(Number(remove.dataset.removeVehicle),1);renderVehiclePreviews();}const listing=event.target.closest('[data-bid-listing]');if(listing){$('#member-dialog').close();showDetail(listing.dataset.bidListing);}});
+window.addEventListener('hashchange',applySectionRoute);applySectionRoute();
+
+</script><script>
+/* Translate interface strings while keeping form values and user content intact. */
+(() => {
+  const catalog = window.FD_MESSAGES;
+  let language = 'en';
+  try { const saved = localStorage.getItem('fd-language'); if (['en','si','ta'].includes(saved)) language = saved; } catch {}
+  const originals = new WeakMap();
+  function translate(source) {
+    if (language === 'en') return source;
+    const leading = source.match(/^\s*/)[0], trailing = source.match(/\s*$/)[0], text = source.trim();
+    if (catalog[text]) return leading + catalog[text][language] + trailing;
+    let match = text.match(/^(\d+) registered members$/);
+    if(match)return language==='si'?`ලියාපදිංචි සාමාජිකයන් ${match[1]}`:`பதிவுசெய்த உறுப்பினர்கள் ${match[1]}`;
+    match = text.match(/^(\d+) opportunities( saved)?$/);
+    if (match) return language === 'si' ? `${match[2]?'සුරැකි ':''}අවස්ථා ${match[1]}` : `${match[2]?'சேமித்த ':''}வாய்ப்புகள் ${match[1]}`;
+    match = text.match(/^(\d+) enquiry drafts$/);
+    if (match) return language === 'si' ? `විමසීම් කෙටුම්පත් ${match[1]}` : `விசாரணை வரைவுகள் ${match[1]}`;
+    match = text.match(/^Listing as (.+) · (.+)$/);
+    if (match) return language === 'si' ? `දැන්වීම පළ කරන්නේ ${match[1]} · ${translate(match[2])}` : `விளம்பரமிடுபவர் ${match[1]} · ${translate(match[2])}`;
+    match = text.match(/^Local preview signed in as (.+)\. Not a verified account\.$/);
+    if (match) return language === 'si' ? `${match[1]} ලෙස දේශීය පෙරදසුනට පිවිස ඇත. සත්‍යාපිත ගිණුමක් නොවේ.` : `${match[1]} ஆக உள்ளக முன்னோட்டத்தில் உள்நுழைந்துள்ளீர்கள். இது சரிபார்க்கப்பட்ட கணக்கு அல்ல.`;
+    match = text.match(/^(Save|Unsave) (.+)$/);
+    if (match) return `${language==='si'?(match[1]==='Save'?'සුරකින්න':'සුරැකුම ඉවත් කරන්න'):(match[1]==='Save'?'சேமி':'சேமிப்பை நீக்கு')} ${translate(match[2])}`;
+    match = text.match(/^(.+) · (Farmer|Wholesale buyer|Transport provider|Fertilizer supplier|Land seller|Exporter|Equipment seller)$/);
+    if (match) return `${match[1]} · ${translate(match[2])}`;
+    return source;
+  }
+  window.fdTranslate = translate;
+  function updateValue(node, key, get, set) {
+    let record = originals.get(node); if (!record) { record = {}; originals.set(node, record); }
+    const value = get();
+    if (!record[key] || value !== record[key].rendered) record[key] = { source: value };
+    const result = translate(record[key].source); record[key].rendered = result;
+    if (result !== value) set(result);
+  }
+  function apply() {
+    observer.disconnect();
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (node.parentElement.closest('script,style,#language,[data-no-translate]')) continue;
+      updateValue(node, 'text', () => node.nodeValue, value => { node.nodeValue = value; });
+    }
+    document.querySelectorAll('[placeholder],[aria-label]').forEach(element => {
+      if (element.closest('[data-no-translate]')) return;
+      for (const attr of ['placeholder','aria-label']) if (element.hasAttribute(attr)) updateValue(element, attr, () => element.getAttribute(attr), value => element.setAttribute(attr,value));
+    });
+    document.documentElement.lang = language;
+    document.title = language === 'si' ? 'Farmers Dream — එක්ව සරු වෙමු' : language === 'ta' ? 'Farmers Dream — ஒன்றாக வளர்வோம்' : 'Farmers Dream — Grow together';
+    observer.observe(document.body, { subtree:true, childList:true, characterData:true, attributes:true, attributeFilter:['placeholder','aria-label'] });
+  }
+  const observer = new MutationObserver(apply);
+  const selector = document.querySelector('#language'); selector.value = language;
+  selector.addEventListener('change', () => {
+    language = selector.value;
+    try { localStorage.setItem('fd-language',language); } catch {}
+    document.querySelectorAll('input,select,textarea').forEach(field => field.setCustomValidity(''));
+    if (typeof render === 'function') render();
+    apply();
+  });
+  document.addEventListener('invalid', event => {
+    const field = event.target;
+    if (!field.validity) return;
+    const message = language==='si' ? 'කරුණාකර මෙම ක්ෂේත්‍රය නිවැරදිව සම්පූර්ණ කරන්න.' : language==='ta' ? 'இந்தப் புலத்தைச் சரியாக நிரப்பவும்.' : 'Please complete this field correctly.';
+    field.setCustomValidity(message);
+  }, true);
+  document.addEventListener('input', event => event.target.setCustomValidity?.(''));
+  document.addEventListener('change', event => event.target.setCustomValidity?.(''));
+  apply();
+})();
+
+</script></body></html>
