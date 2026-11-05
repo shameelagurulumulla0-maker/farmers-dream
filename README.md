@@ -49,3 +49,9 @@ License selection remains pending.
 ## macOS desktop
 
 A native macOS wrapper is available in `desktop/macos/`. Run `bash desktop/macos/build.sh` to bundle the latest shared interface as Farmers Dream.app. See `desktop/macos/README.md` for build instructions and local data boundaries. The desktop app is a local WKWebView wrapper, not a live backend or App Store release.
+
+## Farm Produce directory and reviews
+
+Registered farmers appear on numbered pages, six per page, with all 25 districts available as filters. Sort by newest, price (low/high) or customer star rating. Directory price comparisons use a selected unit and the farmer's lowest matching produce offer. Each member profile has customer reviews. The local review demonstration requires a registered customer to record a received purchase/service, the provider to confirm completion, and then permits one review for that transaction. Production verification still requires the backend and real transaction evidence.
+
+Run the focused behavior checks with `node tests/community.test.mjs` when Node.js is available. These checks simulate the DOM and do not replace browser testing. The desktop bundle must be rebuilt from updated source to include later changes; source pushes do not automatically update an already built app.

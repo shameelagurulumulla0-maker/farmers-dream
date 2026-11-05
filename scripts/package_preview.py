@@ -6,7 +6,7 @@ source = root / 'dist'
 html = (source / 'index.html').read_text(encoding='utf-8')
 html = html.replace('<link rel="stylesheet" href="style.css">',
                     '<style>' + (source / 'style.css').read_text(encoding='utf-8') + '</style>')
-scripts = ['translations.js', 'app.js', 'directory.js', 'language.js']
+scripts = ['translations.js', 'app.js', 'community.js', 'directory.js', 'language.js']
 for name in scripts:
     html = html.replace(f'<script src="{name}" defer></script>', '')
 embedded = ''.join('<script>\n' + (source / name).read_text(encoding='utf-8').replace('</script', '<\\/script')
