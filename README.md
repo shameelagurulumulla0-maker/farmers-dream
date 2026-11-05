@@ -55,3 +55,7 @@ A native macOS wrapper is available in `desktop/macos/`. Run `bash desktop/macos
 Registered farmers appear on numbered pages, six per page, with all 25 districts available as filters. Sort by newest, price (low/high) or customer star rating. Directory price comparisons use a selected unit and the farmer's lowest matching produce offer. Each member profile has customer reviews. The local review demonstration requires a registered customer to record a received purchase/service, the provider to confirm completion, and then permits one review for that transaction. Production verification still requires the backend and real transaction evidence.
 
 Run the focused behavior checks with `node tests/community.test.mjs` when Node.js is available. These checks simulate the DOM and do not replace browser testing. The desktop bundle must be rebuilt from updated source to include later changes; source pushes do not automatically update an already built app.
+
+## Updated interface
+
+The latest UI uses original farm imagery, forest-green/ivory/gold styling, consistent category icons, a compact marketplace card feed, section navigation tabs, clearer member cards and more polished forms, bidding and review panels. Mobile layouts, keyboard focus and reduced-motion preferences are included. See `docs/UI-DESIGN.md` for the design direction, verification limits and generated-image provenance. The standalone file embeds its hero image and needs no separate image download.
